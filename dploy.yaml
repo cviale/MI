@@ -1,0 +1,10 @@
+dev:
+    scheme: "ftp"
+    host: "ftp.cluster1.easy-hebergement.net"
+    port: "21"
+    user: "cyrilviovn"
+    pass: "G3mGFGO1"
+    check: "true"
+    path:
+        local: ""
+        remote: "clients/MI"
