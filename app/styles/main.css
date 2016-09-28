@@ -1,12 +1,16 @@
 /* === GLOBAL SETTINGS === */
+html {
+	height: 100%;
+}
 body {
 	margin: 0;
 	padding: 0;
 	font-size: 12px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	color: #282828;
 	overflow-x: hidden;
+	min-height: 100%;
 }
 	.container {
 		max-width: 1200px;
@@ -27,21 +31,21 @@ body {
 	h2 {
 		text-align: center;
 		text-transform: uppercase;
-		font-weight: 100;
+		font-weight: 300;
 		margin: 10px 0;
 	}
 
 /* === HEADER === */
 header.main-header {
-	margin-top: 50px;
+	margin-top: 20px;
 }
 #logo {
-	max-width: 200px;
-	width: 200px;
-	margin: 50px auto 0;
+	max-width: 100px;
+	width: 100%;
+	margin: 10px auto 0;
 }
 .main-menu {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 	.main-menu ul {
 		text-align: center;
@@ -79,48 +83,52 @@ header.main-header {
 	header ul.nav li a:hover, header ul.nav li a:focus, header ul.nav li a:active, header ul.nav li a:visited {
 		background: none;
 	}
-ul.header-social-networks li a i {
-	color: #282828;
-	font-size: 16px;
-	-webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+ul.header-social-networks li a {
+	padding: 10px
 }
-ul.header-social-networks li a:hover i {
-	-moz-transform: scale(1.25);
-	-webkit-transform: scale(1.25);
-	-o-transform: scale(1.25);
-}
-ul.header-user-menu li {
-	padding: 10px;
-	margin: 0;
-}
-	ul.header-user-menu li a {
-		text-transform: uppercase;
-		padding: 0 0 5px 0;
-		border-radius: 0;
+	ul.header-social-networks li a i {
 		color: #282828;
+		font-size: 14px;
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		-ms-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
 	}
-	ul.header-user-menu li a:before {
-		content: "";
-		position: absolute;
-		z-index: -1;
-		left: 50%;
-		right: 50%;
-		bottom: 0;
-		background: #282828;
-		height: 1px;
-		-webkit-transition-property: left, right;
-		transition-property: left, right;
-		-webkit-transition-duration: 0.3s;
-		transition-duration: 0.3s;
-		-webkit-transition-timing-function: ease-out;
-		transition-timing-function: ease-out;
+	ul.header-social-networks li a:hover i {
+		-moz-transform: scale(1.25);
+		-webkit-transform: scale(1.25);
+		-o-transform: scale(1.25);
 	}
-/* === HOME - MOUSE === */
+	ul.header-user-menu li {
+		padding: 10px;
+		margin: 0;
+	}
+		ul.header-user-menu li a {
+			text-transform: uppercase;
+			padding: 0 0 5px 0;
+			border-radius: 0;
+			color: #282828;
+			font-size: 11px
+		}
+		ul.header-user-menu li a:before {
+			content: "";
+			position: absolute;
+			z-index: -1;
+			left: 50%;
+			right: 50%;
+			bottom: 0;
+			background: #282828;
+			height: 1px;
+			-webkit-transition-property: left, right;
+			transition-property: left, right;
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-timing-function: ease-out;
+			transition-timing-function: ease-out;
+		}
 
+/* === HOME - MOUSE === */
 .mouse {
 	margin: 50px auto;
 	width: 100px;
@@ -186,55 +194,55 @@ ul.header-user-menu li {
 				opacity: 0;
 			}
 		}
+
 /* === HOME - MAIN IMAGE === */
 .main-img {
 	width: 100%;
-	height: 65vh;
-	margin-top: 50px;
+	height: 78vh;
+	margin: 40px auto;
 	background: rgba(242, 242, 242, 1);
 }
+
 /* === HOME - BOUTIQUE === */
-section h2 {
-	margin: 50px 0 0 0;
+.boutique {
+	margin-bottom: 40px;
 }
-.boutique-categories {
-	margin: 30px 0;
-}
-	.boutique-categories ul {
-		text-align: center;
+	.shop-featured {
+		min-height: 330px;
 	}
-		.boutique-categories ul li {
-			text-align: center;
-			display: inline-block;
-			vertical-align: top;
-			padding: 0 40px;
+		.shop-featured-inner {
+			width: 100%;
+			min-height: 330px;
+			background: rgba(242, 242, 242, 1);
 		}
-		.boutique-categories ul li.search {
-			float: right;
+	.shop-text {
+
+	}
+		.shop-text h2 {
+			font-size: 16px;
+			text-align: left;
 		}
-			.boutique-categories ul li a {
-				font-size: 14px;
-				padding: 5px 0;
-			}
-			.boutique-categories ul li a:hover {
-				text-decoration: none;
-			}
-			.boutique-categories ul li a:before {
-				content: "";
-				position: absolute;
-				z-index: -1;
-				left: 50%;
-				right: 50%;
-				bottom: 0;
-				background: #282828;
-				height: 1px;
-				-webkit-transition-property: left, right;
-				transition-property: left, right;
-				-webkit-transition-duration: 0.3s;
-				transition-duration: 0.3s;
-				-webkit-transition-timing-function: ease-out;
-				transition-timing-function: ease-out;
-			}
+		.shop-text p {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	.shop-article {
+		min-height: 330px;
+	}
+		.shop-article-inner {
+			background: rgba(242, 242, 242, 1);
+			width: 100%;
+			min-height: 330px;
+		}
+
+
+
+
+
+
+
+
+
 .grid .item {
 	width: 281.25px;
 	height: 281.25px;
@@ -327,6 +335,7 @@ section h2 {
 			-webkit-transition-delay: 0s;
 			transition-delay: 0s;
 		}
+
 /* === HOME - STORIES / ABOUT === */
 .stories-about figure {
 	margin-top: 30px;
