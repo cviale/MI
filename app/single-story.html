@@ -40,6 +40,8 @@
 		<!-- build:css styles/vendor.css -->
 		<!-- bower:css -->
 		<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="/bower_components/slick-carousel/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="/bower_components/slick-carousel/slick/slick-theme.css"/>
 		<!-- endbower -->
 		<!-- endbuild -->
 
@@ -54,7 +56,7 @@
 		<script src="/bower_components/modernizr/modernizr.js"></script>
 		<!-- endbuild -->
 	</head>
-	<body class="home">
+	<body class="single-story">
 		<!-- Header -->
 		<header class="container-fluid main-header">
 			<nav>
@@ -161,103 +163,50 @@
 		</section>
 
 		<!-- Image principale -->
-		<section class="main-img">
+		<section class="container main-img">
 			<img class="main-img-desktop" src="images/home/main.png">
 			<img class="main-img-mobile" src="images/home/main-mobile.png">
 		</section>
 
-		<!-- clique pour scroll -->
-		<div class="mouse">
-			<div class="mouse-icon"><span class="mouse-wheel"></span></div>
-		</div>
+		<!-- Top contenu -->
+		<section class="container single-story-top">
+			<span class="cat">Catégorie</span>
+			<h1>Titre de la story</h1>
+			<p class="intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
+		</section>
 
-		<div class="arrow-container">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" viewBox="0 0 8.656 8.656">
-			<path d="M2.880,3.560 L5.428,1.061 C5.255,0.609 4.780,0.135 4.351,-0.004 L-0.005,4.336 L4.339,8.665 C4.768,8.526 5.243,8.051 5.417,7.600 L2.845,5.088 L8.533,5.088 C8.614,4.949 8.661,4.706 8.661,4.324 C8.661,3.942 8.614,3.700 8.533,3.560 L2.880,3.560 Z" class="cls-1"></path>
-			</svg>
-		</div>
-
-		<!-- Shop -->
-		<section class="container boutique">
+		<!-- Contenu -->
+		<section class="container single-story-content">
 			<div class="row">
-				<div class="col-md-8 col-sm-8 shop-featured">
-					<figure class="shop-article-inner">
-						<a href="#">
-							<img src="images/home/shop-featured.JPG">
-							<figcaption>
-								<h3>Tabouret sénoufo</h3>
-								<p>215 €</p>
-							</figcaption>
-						</a>
-					</figure>
-
-					<!-- <div class="shop-featured-inner">
-						<img src="images/home/shop-featured.JPG">
-					</div> -->
+				<div class="col-md-6">
+					<img src="images/story/story-1.JPG">
 				</div>
-				<div class="col-md-4 col-sm-4 shop-text">
-					<div class="inner">
-						<h2>Lorem ipsum dolor sit amet ipsum dolor</h2>
-						<p>Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
-					</div>
+				<div class="col-md-6">
+					<img src="images/story/story-2.JPG">
+					<br><br><br>
+					<img src="images/story/story-3.JPG">
 				</div>
 			</div>
+
 			<div class="row">
-				<div class="col-md-4 col-sm-4 shop-article">
-					<figure class="shop-article-inner">
-						<a href="#">
-							<img src="images/instagram/insta-4.jpg" alt="illus-1"/>
-							<figcaption>
-								<h3>Tabouret sénoufo</h3>
-								<p>215 €</p>
-							</figcaption>
-						</a>
-					</figure>
+				<div class="col-md-6">
+					<h2>Lorem ipsum dolor sit amet</h2>
+					<p>Consectetur adipiscing elit. Aenean sit amet ornare libero, accumsan efficitur lacus. Sed accumsan massa eget nunc pellentesque semper. Mauris in odio sapien. Sed magna turpis, egestas ut nisl a, ultricies finibus mauris. Pellentesque ultricies, dolor eget scelerisque egestas, velit felis auctor quam, eget porta magna ligula a sem. Aliquam aliquet ex non cursus euismod. Donec est lacus, accumsan at luctus id, vulputate in eros. Nulla facilisi. Proin non elit at magna lobortis lacinia et nec enim. Mauris libero diam, blandit vel odio id, auctor semper mauris. Donec libero risus, semper vel tortor et, sollicitudin scelerisque erat. Donec hendrerit metus ex, vitae dapibus ex tempor in. Sed lobortis cursus sapien, ut convallis diam volutpat in. Ut blandit congue sem id ornare. Donec sed nulla pellentesque, pretium nunc a, gravida sapien. Aenean posuere quam at sem facilisis, eu cursus magna pretium.</p>
+					<p>Sed ornare purus rutrum risus varius lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce faucibus lacus sed ante sagittis suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In at sem id ligula commodo consequat. Duis vestibulum lacus eget lorem egestas egestas. Fusce nec ipsum quis libero finibus eleifend et non est. Sed est metus, congue nec fermentum sed, finibus quis dui. Cras sodales lacus dui, scelerisque viverra magna egestas eget.</p>
 				</div>
-				<div class="col-md-4 col-sm-4 shop-article">
-					<figure class="shop-article-inner">
-						<a href="#">
-							<img src="images/home/shop-01.jpg" alt="illus-1"/>
-							<figcaption>
-								<h3>Tabouret sénoufo</h3>
-								<p>215 €</p>
-							</figcaption>
-						</a>
-					</figure>
+				<div class="col-md-6">
+				<img src="images/story/story-4.JPG">
 				</div>
-				<div class="col-md-4 col-sm-4 shop-article">
-					<figure class="shop-article-inner">
-						<a href="#">
-							<img src="images/instagram/insta-1.jpg" alt="illus-1"/>
-							<figcaption>
-								<h3>Tabouret sénoufo</h3>
-								<p>215 €</p>
-							</figcaption>
-						</a>
-					</figure>
-				</div>
+			</div>
+
+			<div class="single-story-carousel">
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
 			</div>
 		</section>
 
-		<!-- Stories / About -->
-		<section class="container stories-about">
-			<div class="row">
-				<div class="col-md-6 col-sm-6 text-center">
-					<h2>Stories</h2>
-					<figure>
-						<img src="images/boutique/illus-2.jpg" alt="illus-big-2" />
-						<a href="#"></a>
-					</figure>
-				</div>
-				<div class="col-md-6 col-sm-6 text-center">
-					<h2>About</h2>
-					<figure>
-						<img src="images/boutique/illus-3.jpg" alt="illus-big-3" />
-						<a href="#"></a>
-					</figure>
-				</div>
-			</div>
-		</section>
+		
 
 		<!-- Rejoignez l'univers MI -->
 		<section class="fluid-container join-mi">
@@ -360,6 +309,7 @@
 		<script src="/bower_components/bootstrap/js/scrollspy.js"></script>
 		<script src="/bower_components/bootstrap/js/collapse.js"></script>
 		<script src="/bower_components/bootstrap/js/tab.js"></script>
+		<script src="/bower_components/slick-carousel/slick/slick.js"></script>
 		<!-- endbuild -->
 		
 		<!-- build:js scripts/main.js -->

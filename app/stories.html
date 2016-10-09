@@ -54,7 +54,7 @@
 		<script src="/bower_components/modernizr/modernizr.js"></script>
 		<!-- endbuild -->
 	</head>
-	<body class="home">
+	<body class="stories">
 		<!-- Header -->
 		<header class="container-fluid main-header">
 			<nav>
@@ -83,7 +83,7 @@
 			<nav class="container main-menu">
 				<ul class="nav">
 					<li><a class="hvr-underline-from-center" href="#">Shop</a></li>
-					<li><a class="hvr-underline-from-center" href="#">Stories</a></li>
+					<li><a class="hvr-underline-from-center active" href="#">Stories</a></li>
 					<li><a class="hvr-underline-from-center" href="#">About</a></li>
 					<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
 				</ul>
@@ -109,7 +109,7 @@
 			<nav>
 				<ul class="nav nav-pills pull-left">
 					<li><a href="#">Shop</a></li>
-					<li><a href="#">Stories</a></li>
+					<li><a href="#" class="active">Stories</a></li>
 					<li><a href="#">About</a></li>
 					<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
 				</ul>
@@ -132,7 +132,7 @@
 			<nav>
 				<ul class="menu-mobile-main">
 					<li><a href="#">Shop</a></li>
-					<li><a href="#">Stories</a></li>
+					<li><a href="#" class="active">Stories</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Compte</a></li>
 					<li><a href="#">Panier (0)</a></li>
@@ -160,103 +160,132 @@
 			<span>Maison Intègre</span>
 		</section>
 
-		<!-- Image principale -->
-		<section class="main-img">
-			<img class="main-img-desktop" src="images/home/main.png">
-			<img class="main-img-mobile" src="images/home/main-mobile.png">
+		<!-- Breacrumb -->
+		<section class="container breadcrumb">
+			<a href="index.html">Accueil</a> <span>»</span> Stories
 		</section>
 
-		<!-- clique pour scroll -->
-		<div class="mouse">
-			<div class="mouse-icon"><span class="mouse-wheel"></span></div>
-		</div>
-
-		<div class="arrow-container">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" viewBox="0 0 8.656 8.656">
-			<path d="M2.880,3.560 L5.428,1.061 C5.255,0.609 4.780,0.135 4.351,-0.004 L-0.005,4.336 L4.339,8.665 C4.768,8.526 5.243,8.051 5.417,7.600 L2.845,5.088 L8.533,5.088 C8.614,4.949 8.661,4.706 8.661,4.324 C8.661,3.942 8.614,3.700 8.533,3.560 L2.880,3.560 Z" class="cls-1"></path>
-			</svg>
-		</div>
-
-		<!-- Shop -->
-		<section class="container boutique">
-			<div class="row">
-				<div class="col-md-8 col-sm-8 shop-featured">
-					<figure class="shop-article-inner">
-						<a href="#">
-							<img src="images/home/shop-featured.JPG">
-							<figcaption>
-								<h3>Tabouret sénoufo</h3>
-								<p>215 €</p>
-							</figcaption>
-						</a>
-					</figure>
-
-					<!-- <div class="shop-featured-inner">
-						<img src="images/home/shop-featured.JPG">
-					</div> -->
-				</div>
-				<div class="col-md-4 col-sm-4 shop-text">
+		<section class="wrapper-article">
+			<!-- Main article -->
+			<section class="container main-article">
+				<h1>À LA UNE</h1>
+				<div class="row">
 					<div class="inner">
-						<h2>Lorem ipsum dolor sit amet ipsum dolor</h2>
-						<p>Consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.</p>
+						<div class="col-md-8 main-article-img">
+							<img src="images/stories/stories-01.jpg">
+						</div>
+						<div class="col-md-4 main-article-content">
+							<div class="post-metas">
+								<span class="cat"><a href="#">Catégorie</a></span>
+								<span class="date">Décembre 2016</span>
+							</div>
+							<a href="#">
+								<h2>Lorem Ipsum is simply dummy text of the printing</h2>
+								<p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</a>
+							<span class="like"><i class="fa fa-heart"></i>&nbsp;&nbsp;(25)</span>
+							<a href="#">
+								<span class="link">
+									<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.5 8" style="enable-background:new 0 0 18.5 8;" xml:space="preserve">
+									<style type="text/css">
+									.st0{stroke:#191A1C;stroke-width:1.5;stroke-miterlimit:10;}
+									</style>
+									<line class="st0 line" x1="17.4" y1="4" x2="0" y2="4" style="stroke-dashoffset: 9.20001; stroke-dasharray: 18.4, 28.4;"></line>
+									<line class="st0 " x1="18" y1="4.5" x2="14" y2="0.5"></line>
+									<line class="st0" x1="14" y1="7.5" x2="18" y2="3.5"></line>
+									</svg>
+								</span>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4 col-sm-4 shop-article">
-					<figure class="shop-article-inner">
-						<a href="#">
-							<img src="images/instagram/insta-4.jpg" alt="illus-1"/>
-							<figcaption>
-								<h3>Tabouret sénoufo</h3>
-								<p>215 €</p>
-							</figcaption>
-						</a>
-					</figure>
-				</div>
-				<div class="col-md-4 col-sm-4 shop-article">
-					<figure class="shop-article-inner">
-						<a href="#">
-							<img src="images/home/shop-01.jpg" alt="illus-1"/>
-							<figcaption>
-								<h3>Tabouret sénoufo</h3>
-								<p>215 €</p>
-							</figcaption>
-						</a>
-					</figure>
-				</div>
-				<div class="col-md-4 col-sm-4 shop-article">
-					<figure class="shop-article-inner">
-						<a href="#">
-							<img src="images/instagram/insta-1.jpg" alt="illus-1"/>
-							<figcaption>
-								<h3>Tabouret sénoufo</h3>
-								<p>215 €</p>
-							</figcaption>
-						</a>
-					</figure>
-				</div>
-			</div>
-		</section>
+			</section>
 
-		<!-- Stories / About -->
-		<section class="container stories-about">
-			<div class="row">
-				<div class="col-md-6 col-sm-6 text-center">
-					<h2>Stories</h2>
-					<figure>
-						<img src="images/boutique/illus-2.jpg" alt="illus-big-2" />
-						<a href="#"></a>
-					</figure>
+			<section class="container wall-articles">
+				<h1>À DÉCOUVRIR AUSSI</h1>
+				<div class="row">
+					<article class="col-md-4 col-sm-6 item">
+						<div class="inner">
+							<img class="item-img" src="images/stories/stories-02.jpg">
+							<div class="post-metas">
+								<span class="cat"><a href="#">Catégorie</a></span>
+								<span class="date">Décembre 2016</span>
+							</div>
+							<a class="item-link" href="#">
+								<h2>Lorem Ipsum is simply dummy text of the printing</h2>
+								<p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</a>
+							<span class="like"><i class="fa fa-heart"></i>&nbsp;&nbsp;(25)</span>
+							<a href="#">
+								<span class="link">
+									<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.5 8" style="enable-background:new 0 0 18.5 8;" xml:space="preserve">
+									<style type="text/css">
+									.st0{stroke:#191A1C;stroke-width:1.5;stroke-miterlimit:10;}
+									</style>
+									<line class="st0 line" x1="17.4" y1="4" x2="0" y2="4" style="stroke-dashoffset: 9.20001; stroke-dasharray: 18.4, 28.4;"></line>
+									<line class="st0 " x1="18" y1="4.5" x2="14" y2="0.5"></line>
+									<line class="st0" x1="14" y1="7.5" x2="18" y2="3.5"></line>
+									</svg>
+								</span>
+							</a>
+						</div>
+					</article>
+
+					<article class="col-md-4 col-sm-6 item">
+						<div class="inner">
+							<img class="item-img" src="images/stories/stories-02.jpg">
+							<div class="post-metas">
+								<span class="cat"><a href="#">Catégorie</a></span>
+								<span class="date">Décembre 2016</span>
+							</div>
+							<a class="item-link" href="#">
+								<h2>Lorem Ipsum is simply dummy text of the printing</h2>
+								<p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</a>
+							<span class="like"><i class="fa fa-heart"></i>&nbsp;&nbsp;(25)</span>
+							<a href="#">
+								<span class="link">
+									<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.5 8" style="enable-background:new 0 0 18.5 8;" xml:space="preserve">
+									<style type="text/css">
+									.st0{stroke:#191A1C;stroke-width:1.5;stroke-miterlimit:10;}
+									</style>
+									<line class="st0 line" x1="17.4" y1="4" x2="0" y2="4" style="stroke-dashoffset: 9.20001; stroke-dasharray: 18.4, 28.4;"></line>
+									<line class="st0 " x1="18" y1="4.5" x2="14" y2="0.5"></line>
+									<line class="st0" x1="14" y1="7.5" x2="18" y2="3.5"></line>
+									</svg>
+								</span>
+							</a>
+						</div>
+					</article>
+
+					<article class="col-md-4 col-sm-6 item">
+						<div class="inner">
+							<img class="item-img" src="images/stories/stories-02.jpg">
+							<div class="post-metas">
+								<span class="cat"><a href="#">Catégorie</a></span>
+								<span class="date">Décembre 2016</span>
+							</div>
+							<a class="item-link" href="#">
+								<h2>Lorem Ipsum is simply dummy text of the printing</h2>
+								<p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</a>
+							<span class="like"><i class="fa fa-heart"></i>&nbsp;&nbsp;(25)</span>
+							<a href="#">
+								<span class="link">
+									<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18.5 8" style="enable-background:new 0 0 18.5 8;" xml:space="preserve">
+									<style type="text/css">
+									.st0{stroke:#191A1C;stroke-width:1.5;stroke-miterlimit:10;}
+									</style>
+									<line class="st0 line" x1="17.4" y1="4" x2="0" y2="4" style="stroke-dashoffset: 9.20001; stroke-dasharray: 18.4, 28.4;"></line>
+									<line class="st0 " x1="18" y1="4.5" x2="14" y2="0.5"></line>
+									<line class="st0" x1="14" y1="7.5" x2="18" y2="3.5"></line>
+									</svg>
+								</span>
+							</a>
+						</div>
+					</article>
 				</div>
-				<div class="col-md-6 col-sm-6 text-center">
-					<h2>About</h2>
-					<figure>
-						<img src="images/boutique/illus-3.jpg" alt="illus-big-3" />
-						<a href="#"></a>
-					</figure>
-				</div>
-			</div>
+			</section>
 		</section>
 
 		<!-- Rejoignez l'univers MI -->

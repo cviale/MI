@@ -1,19 +1,254 @@
-/* IPAD < 1024
+/* MEDIUM DEVICES < 992
 ======================================================================================= */
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 992px) {
+	/* === HOME - MAIN IMAGE === */
+	.main-img {
+		height: auto;
+	}
+	.arrow-container {
+		display: none;
+	}
+	/* === HOME - BOUTIQUE === */
+	.shop-article-inner {
+		min-height: auto;
+	}
+	/* === INSTAGRAM - HOME === */
+	.insta-home ul li {
+		width: 29%;
+		margin: 0 2%;
+	}
+	/* === MAIN IMAGE - ABOUT === */
+	.join-community .col-sm-6 {
+		margin-bottom: 30px;
+	}
+	.join-community form button {
+		right: 5%;
+	}
+	.join-community .col-md-4:last-of-type .inner {
+		min-height: 150px;
+	}
+	/* === STORIES === */
+	.breadcrumb {
+		margin: 15px auto;
+	}
+	.wrapper-article h1 {
+		font-size: 28px;
+	}
+	.main-article h1 {
+		margin-top: 10px;
+	}
+	.main-article-img img {
+		min-height: auto;
+	}
+	.wrapper-article h2 {
+		margin: 20px 0 20px;
+	}
+	.main-article .main-article-content {
+		min-height: 280px;
+	}
+	.wrapper-article h2 {
+		font-size: 22px;
+		line-height: 24px;
+		margin: 20px 0 20px;
+	}
+
+
+	.main-article-content {
+		min-height: 210px;
+	}
+	.wrapper-article {
+		margin-bottom: 0;
+	}
+	.wall-articles .item {
+		margin-bottom: 30px;
+		overflow: hidden;
+	}
+	.wall-articles .item .inner {
+		height: 310px;
+	}
+	.wall-articles .item .inner .item-img {
+		opacity: 0.3;
+	}
+	.wall-articles .item .inner .cat a,
+	.wall-articles .item .inner h2,
+	.wall-articles .item .inner p,
+	.wall-articles .item .inner .post-metas,
+	.wall-articles .item .inner .like,
+	.wall-articles .item .inner .st0 {
+		opacity: 1;
+	}
+	/* === FOOTER === */
+	.footer-contact span.hide {
+		display: none;
+	}
+}
+/* MEDIUM DEVICES LANDSCAPE < 992
+======================================================================================= */
+@media only screen and (max-width : 992px) and (orientation:landscape) {
 
 }
-/* IPAD LANDSCAPE < 1024
+/* SMALL DEVICES < 767
 ======================================================================================= */
-@media only screen and (max-width : 1024px) and (orientation:landscape) {
-
+@media only screen and (max-width : 767px) {
+	/* === HEADER === */
+	header.main-header {
+		display: none;
+	}
+	.sticky-header {
+		display: block !important;
+		height: 60px;
+		border: none;
+		position: absolute;
+	}
+	.logo-sticky {
+		display: none;
+	}
+	.main-menu ul li {
+		padding: 0 12px;
+	}
+	/* === HEADER - STICKY === */
+	.sticky-header nav {
+		display: none;
+	}
+	#nav-icon {
+		display: block;
+	}
+	.logo-mobile {
+		display: block;
+	}
+	/* === HOME - MAIN IMAGE === */
+	.main-img {
+		height: 68vh;
+	}
+	.arrow-container {
+		display: block;
+	}
+	.main-img img.main-img-desktop {
+		display: none;
+	}
+	.main-img img.main-img-mobile {
+		display: block;
+	}
+	/* === HOME - BOUTIQUE === */
+	.shop-featured, .shop-text {
+		min-height: auto;
+		height: auto;
+	}
+	.shop-article-inner {
+		margin-bottom: 30px;
+	}
+	.shop-article:last-of-type .shop-article-inner {
+		margin-bottom: 0;
+	}
+	.shop-article-inner img {
+		opacity: 0.6;
+	}
+	.shop-article-inner figcaption h3 {
+		opacity: 1;
+		-webkit-transform: translate3d(0%, 0%, 0);
+		transform: translate3d(0%, 0%, 0);
+		-webkit-transition-delay: 0.2s;
+		transition-delay: 0.2s;
+		font-size: 20px;
+	}
+	.shop-article-inner figcaption p {
+		opacity: 1;
+		-webkit-transform: translate3d(0%, 0%, 0);
+		transform: translate3d(0%, 0%, 0);
+		-webkit-transition-delay: 0.2s;
+		transition-delay: 0.2s;
+		font-size: 18px;
+	}
+	.shop-article-inner figcaption:before {
+		background: #f3f3f3;
+		top: 50%;
+		opacity: 1;
+		-webkit-transition-delay: 0s;
+		transition-delay: 0s;
+	}
+	/* === HOME - STORIES / ABOUT === */
+	.stories-about .col-sm-6:first-of-type {
+		margin-bottom: 30px;
+	}
+	.stories-about figure {
+		margin-top: 10px;
+	}
+	/* === REJOIGNEZ MI - HOME === */
+	.join-mi h2 {
+		padding: 0 15px;
+	}
+	.join-mi form {
+		padding: 0 15px;
+	}
+	.join-mi form button {
+		right: 15px;
+	}
+	/* === INSTAGRAM - HOME === */
+	.insta-home .inner {
+		background: none;
+		padding: 0;
+	}
+	.insta-home ul li {
+		width: 28%;
+		height: auto;
+		margin: 0 2%;
+	}
+	.insta-home ul li:last-of-type {
+		margin-bottom: 0;
+	}
+	/* === PUSH PRO - HOME === */
+	.pro-home {
+		display: none;
+	}
+	/* === MAIN IMAGE - ABOUT === */
+	.about .arrow-container {
+		display: block;
+	}
+	.widget-mi .col-sm-4 {
+		display: none;
+	}
+	.about h1 {
+		font-size: 30px;
+	}
+	.widget-text h2, .join-community h2 {
+		font-size: 24px;
+	}
+	.join-community .col-xs-6 .inner {
+		min-height: 160px;
+	}
+	.join-community .col-md-4:last-of-type .inner {
+		min-height: 100px;
+	}
+	.join-community .inner h3 {
+		font-size: 22px;
+	}
+	/* === FOOTER === */
+	footer .column {
+		text-align: center;
+	}
+		footer .column .inner {
+		text-align: center;
+		border-bottom: 1px solid #f3f3f3;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	footer .column:first-of-type .inner {
+		padding-top: 0;
+	}
+	footer .column:last-of-type .inner {
+		border:  none;
+	}
+	footer .column h3 {
+		font-size: 16px;
+	}
+	footer .column ul.footer-links li a {
+		font-size: 16px;
+	}
+	footer .column .logo-footer {
+		width: 50px;
+	}
 }
-/* IPHONE < 1024
-======================================================================================= */
-@media only screen and (max-width : 480px) {
-
-}
-/* IPHONE LANDSCAPE < 1024
+/* SMALL DEVICES LANDSCAPE < 768
 ======================================================================================= */
 @media only screen and (max-width : 768px) and (orientation: landscape) {
 
