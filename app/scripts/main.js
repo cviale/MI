@@ -44,10 +44,56 @@ $(document).ready(function() {
 		}
 	);
 
-	// Carousel Single Story
+	// Carousel - Single Story
 	$('.single-story-carousel').slick( {
 		centerMode: false,
-		speed: 2000,
+		speed: 1000,
+		infinite: true,
+		slidesToShow: 1,
+		dots: false,
+		draggable: true,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		arrows: true,
+		pauseOnHover: false
+	});
+
+	// Carousel Selection du moment - Single Story
+	$('.selection-carousel').slick( {
+		centerMode: false,
+		speed: 1000,
+		infinite: true,
+		slidesToShow: 3,
+		dots: false,
+		draggable: true,
+		autoplay: false,
+		autoplaySpeed: 2000,
+		arrows: true,
+		pauseOnHover: false,
+		responsive: [
+			{
+				breakpoint: 770,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1,
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					dots: true
+				}
+			}
+		]
+	});
+
+	// Carousel - Shop
+	$('.shop-products-featured').slick( {
+		centerMode: false,
+		speed: 1000,
 		infinite: true,
 		slidesToShow: 1,
 		dots: false,

@@ -9,17 +9,17 @@
 		<!-- SEO -->
 		<title>Maison Intègre</title>
 		<meta name="description" content="Maison Intègre">
-		<meta property="og:title" content="Designed in Africa for unique & luxury homes.Inspired, integrated & delighted">
+		<meta property="og:title" content="Maison Intègre parcourt l’Afrique à la recherche d’objets, meubles et tissus uniques pour vos intérieurs">
 		<meta property="og:type" content="website">
 		<meta property="og:image" content="">
 		<meta property="og:url" content="http://maisonintegre.com/">
-		<meta property="og:description" content="Designed in Africa for unique & luxury homes.Inspired, integrated & delighted">
+		<meta property="og:description" content="Maison Intègre parcourt l’Afrique à la recherche d’objets, meubles et tissus uniques pour vos intérieurs">
 		<meta property="og:locale" content="fr_FR">
 
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="">
 		<meta name="twitter:title" content="Maison Intègre">
-		<meta name="twitter:description" content="Designed in Africa for unique & luxury homes.Inspired, integrated & delighted">
+		<meta name="twitter:description" content="Maison Intègre parcourt l’Afrique à la recherche d’objets, meubles et tissus uniques pour vos intérieurs">
 		<meta name="twitter:image" content="">
 
 		<!-- Fonts -->
@@ -56,7 +56,7 @@
 		<script src="/bower_components/modernizr/modernizr.js"></script>
 		<!-- endbuild -->
 	</head>
-	<body class="about">
+	<body class="home">
 		<!-- Header -->
 		<header class="container-fluid main-header">
 			<nav>
@@ -86,7 +86,7 @@
 				<ul class="nav">
 					<li><a class="hvr-underline-from-center" href="#">Shop</a></li>
 					<li><a class="hvr-underline-from-center" href="#">Stories</a></li>
-					<li><a class="hvr-underline-from-center active" href="#">About</a></li>
+					<li><a class="hvr-underline-from-center" href="#">About</a></li>
 					<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
 				</ul>
 			</nav>
@@ -112,7 +112,7 @@
 				<ul class="nav nav-pills pull-left">
 					<li><a href="#">Shop</a></li>
 					<li><a href="#">Stories</a></li>
-					<li><a class="active" href="#">About</a></li>
+					<li><a href="#">About</a></li>
 					<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
 				</ul>
 			</nav>
@@ -135,7 +135,7 @@
 				<ul class="menu-mobile-main">
 					<li><a href="#">Shop</a></li>
 					<li><a href="#">Stories</a></li>
-					<li><a class="active" href="#">About</a></li>
+					<li><a href="#">About</a></li>
 					<li><a href="#">Compte</a></li>
 					<li><a href="#">Panier (0)</a></li>
 					<li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
@@ -164,77 +164,72 @@
 
 		<!-- Breacrumb -->
 		<section class="container breadcrumb">
-			<a href="index.html">Accueil</a> <span>»</span> About
+			<a href="index.html">Accueil</a> <span>»</span> <a href="#">Shop</a> <span>»</span> <a href="#">Catégorie</a> <span>»</span> Nom du produit
 		</section>
 
-		<!-- Image principale -->
-		<section class="container main-img">
-			<img class="main-img-desktop" src="images/home/main.png">
-			<img class="main-img-mobile" src="images/home/main-mobile.png">
+		<!-- Détails produits -->
+		<section class="container product">
+			<div class="row">
+				<div class="col-md-6 product-img">
+					<div class="inner">
+						<img src="images/produits/produit-1.jpg" alt="titre produit">
+					</div>
+				</div>
+				<div class="col-md-6 details-product">
+					<div class="inner">
+						<h1>Titre du produit</h1>
+						<div class="price">285 €</div>
+						<select name="qty" class="quantity-product">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+						<button class="add-to-cart">Ajouter au panier</button>
+					</div>
+				</div>
+			</div>
 		</section>
 
-		<div class="arrow-container">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" viewBox="0 0 8.656 8.656">
-			<path d="M2.880,3.560 L5.428,1.061 C5.255,0.609 4.780,0.135 4.351,-0.004 L-0.005,4.336 L4.339,8.665 C4.768,8.526 5.243,8.051 5.417,7.600 L2.845,5.088 L8.533,5.088 C8.614,4.949 8.661,4.706 8.661,4.324 C8.661,3.942 8.614,3.700 8.533,3.560 L2.880,3.560 Z" class="cls-1"></path>
-			</svg>
-		</div>
+		<!-- Rejoignez l'univers MI -->
+		<section class="fluid-container join-mi">
+			<h2>Rejoignez l'univers Maison Integre</h2>
+			<form action="">
+				<input title="email" type="email" placeholder=" Votre adresse mail" required>
+				<button class="button">Envoyer</button>
+			</form>
+		</section>
 
-		<!-- Contenu -->
-		<section class="container wrapper-content">
-			<div class="row widget-text widget-mi">
-				<div class="col-md-4 col-sm-4">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.76 212.88"><defs><style>.cls-1{fill:#1a171b;}</style></defs><title></title>
-					<g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1">
-					<path class="cls-1" d="M127.4,0a2.06,2.06,0,0,0-2.06,2.06v166.3a2.06,2.06,0,1,0,4.12,0V2.06A2.06,2.06,0,0,0,127.4,0Z"/>
-					<path class="cls-1" d="M121.49,50.72l-1.4-.81C85.37,29.87,65.74,18.53,64.8,18a4.72,4.72,0,0,0-4.66-.05,4.42,4.42,0,0,0-2.24,3.9V132.19a2.06,2.06,0,1,0,4.12,0V21.82a.31.31,0,0,1,.15-.31.52.52,0,0,1,.52,0c1.61,1,54.24,31.32,56.73,32.76a2.11,2.11,0,0,0,2.81-.75,2.06,2.06,0,0,0-.75-2.82Z"/>
-					<path class="cls-1" d="M194.61,17.93A4.73,4.73,0,0,0,190,18c-1.26.75-35.19,20.33-55.31,31.94l-1.37.79a2.06,2.06,0,0,0-.76,2.81,2.12,2.12,0,0,0,2.82.76c2.67-1.54,55.11-31.8,56.73-32.76a.54.54,0,0,1,.52,0,.31.31,0,0,1,.16.32V132.19a2.06,2.06,0,1,0,4.12,0V21.82A4.42,4.42,0,0,0,194.61,17.93Z"/></g></g>
-					</svg>
-				</div>
-				<div class="col-md-8 col-sm-8">
-					<h1>Maison Intègre</h1>
-					<p>Text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
-					<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
-				</div>
-			</div>
-			<div class="row widget-text">
-				<div class="col-md-8 col-sm-8">
-					<h2>La créatrice</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
-				</div>
-				<div class="col-md-4 col-sm-4">
-					<img src="images/about/ambre.jpg">
-				</div>
-			</div>
-			<div class="row widget-text">
-				<div class="col-md-8">
-					<img src="images/about/about-01.jpg">
-				</div>
-				<div class="col-md-4">
-					<h2>Praesent egestas feugiat</h2>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-					<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
-				</div>
-			</div>
-			<div class="row widget-text join-community">
-			<h2>REJOIGNEZ LA COMMUNAUTÉ</h2>
-				<div class="col-md-4 col-sm-6 col-xs-6">
+		<!-- Instagram / Push -->
+		<section class="container insta-push">
+			<div class="row">
+				<div class="col-md-8 text-center insta-home">
 					<div class="inner">
-						<a target="_blank" href="https://www.instagram.com/maisonintegre/"><h3><i class="fa fa-instagram"></i><br>Instagram</h3></a>
+						<h2><a target="_blank" href="https://www.instagram.com/maisonintegre/">#MAISONINTEGRE sur Instagram</a></h2>
+						<ul>
+							<li class="insta-home-item">
+								<a target="_blank" href="#"><img src="images/instagram/insta-1.jpg"></a>
+							</li>
+							<li class="insta-home-item">
+								<a target="_blank" href="#"><img src="images/instagram/insta-2.jpg"></a>
+							</li>
+							<li class="insta-home-item">
+								<a target="_blank" href="#"><img src="images/instagram/insta-3.jpg"></a>
+							</li>
+						</ul>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-xs-6">
+				<div class="col-md-4 hidden-sm text-center pro-home">
 					<div class="inner">
-						<a target="_blank" href="https://www.instagram.com/maisonintegre/"><h3><i class="fa fa-facebook"></i><br>Facebook</h3></a>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="inner">
-						<form action="">
-							<input title="email" type="email" placeholder=" Votre adresse mail" required="">
-							<button class="button">Envoyer</button>
-						</form>
+						<a href="mailto:contact@maisonintegre.fr">
+							<h2>PROFESSIONNELS ?<br>MAISON INTEGRE PART CHINER POUR VOUS</h2>
+						</a>
 					</div>
 				</div>
 			</div>
