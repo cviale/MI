@@ -1017,6 +1017,7 @@ ul.header-social-networks li a {
 			background: url('../images/slick-nav.png');
 			background-repeat: no-repeat;
 			background-size: contain;
+			background-position: center right;
 			width: 80px;
 			height: 80px;
 			transform: rotate(270deg);
@@ -1033,6 +1034,7 @@ ul.header-social-networks li a {
 			background: url('../images/slick-nav.png');
 			background-repeat: no-repeat;
 			background-size: contain;
+			background-position: center left;
 			width: 80px;
 			height: 80px;
 			transform: rotate(90deg);
@@ -1072,7 +1074,8 @@ ul.header-social-networks li a {
 				background: url('../images/slick-nav-black.png');
 				background-repeat: no-repeat;
 				background-position: center;
-				background-size: 36px;
+				background-size: 28px;
+				background-color: #ffffff;
 				width: 50px;
 				height: 50px;
 				transform: rotate(270deg);
@@ -1081,13 +1084,14 @@ ul.header-social-networks li a {
 				margin-top: -20px;
 				transform: ;
 				z-index: 1;
-				border: 2px solid #282828;
+				border: 1px solid #282828;
 			}
 			.selection-carousel .slick-prev, .selection-carousel .slick-prev:hover, .selection-carousel .slick-prev:active, .selection-carousel .slick-prev:focus {
 				background: url('../images/slick-nav-black.png');
 				background-repeat: no-repeat;
 				background-position: center;
-				background-size: 36px;
+				background-size: 28px;
+				background-color: #ffffff;
 				width: 50px;
 				height: 50px;
 				transform: rotate(90deg);
@@ -1096,7 +1100,7 @@ ul.header-social-networks li a {
 				margin-top: -20px;
 				transform: ;
 				z-index: 1;
-				border: 2px solid #282828;
+				border: 1px solid #282828;
 			}
 			.selection-carousel .slick-dots {
 				bottom: 0;
@@ -1126,29 +1130,43 @@ ul.header-social-networks li a {
 	}
 
 /* === SINGLE SHOP === */
-.details-product {
-
+.mobile-product {
+	display: none;
 }
+	.mobile-product h1 {
+		text-align: left;
+	}
+.global-product {
+	margin-bottom: 30px;
+}
+	.slider-for {
+		margin-bottom: 10px;
+	}
+	.slider-nav img {
+		padding: 10px;
+	}
 	.product-img img {
 		width: 100%;
 	}
 	.details-product h1 {
 		text-align: left;
 		font-size: 30px;
-		margin: 0 0 10px 0;
+		margin: 0 0 20px 0;
 	}
-	.details-product .price {
+	.price {
 		font-size: 20px;
 		font-weight: 400;
-		margin: 0 0 10px 0;
+		margin: 0 0 20px 0;
 	}
-	.details-product .quantity-product {
+	.quantity-product {
 		border: none;
 		background: #f3f3f3;
-		padding: 15px 6px;
+		padding: 13px 6px;
 		vertical-align: top;
+		font-size: 15px;
+		margin: 0 10px 20px 0;
 	}
-	.details-product .add-to-cart {
+	.add-to-cart {
 		text-transform: uppercase;
 		font-size: 20px;
 		background: #000000;
@@ -1157,7 +1175,69 @@ ul.header-social-networks li a {
 		font-weight: 100;
 		padding: 10px 20px;
 		vertical-align: top;
+		margin: 0 0 20px 0;
+		letter-spacing: 1px;
 	}
+	.details-product .description {
+		margin: 0 0 20px 0;
+	}
+		.details-product .description h3 {
+			margin: 0 0 5px 0;
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		.details-product .description p {
+			font-size: 14px;
+			line-height: 20px;
+		}
+	.details-product .inside {
+		border: 1px solid #f3f3f3;
+		padding: 20px;
+	}
+		.details-product .inside h3 {
+			margin: 0 0 5px 0;
+			font-size: 16px;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+		.details-product .inside p {
+			font-size: 14px;
+			line-height: 20px;
+			margin: 0;
+		}
+
+/* === CATS SHOP === */
+.cat-products-filters h1 {
+	margin: 0;
+	text-align: left;
+	font-size: 26px;
+}
+.filters h2 {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+.filters button {
+	background: none;
+	border:  0;
+	display: block;
+	font-size: 14px;
+}
+.filters button.is-checked {
+	font-weight: 500;
+	font-style: italic;
+}
+
+.cat-products {
+	margin-bottom: 30px;
+}
+.cat-products-grid article {
+	width: 30%;
+	min-height: 300px;
+	background: #f3f3f3;
+}
 
 
 
