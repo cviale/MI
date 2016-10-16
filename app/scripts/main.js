@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 	// Scroll mouse - Home
 	$('.arrow-container').click(function() {
-		$('html, body').animate({ scrollTop: $('.boutique').offset().top - 90}, 1000);
+		$('html, body').animate({ scrollTop: $('.intro-home').offset().top - 90}, 1000);
 	});
 
 	// Stories / About - Home
