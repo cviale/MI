@@ -137,6 +137,10 @@
 	.details-product .price {
 		display: none;
 	}
+	/* === CATS SHOP === */
+	.cat-products-grid article {
+		width: 43%;
+	}
 	/* === FOOTER === */
 	.footer-contact span.hide {
 		display: none;
