@@ -9,7 +9,7 @@ $(document).ready(function() {
 	}
 
 	// Disable Touch iPhone
-	$('.menu-mobile').on('touchmove', function(e){
+	$('body').on('touchmove', function(e){
 		e.preventDefault();
 	});
 

@@ -4,18 +4,60 @@
 	/* === HOME - MAIN IMAGE === */
 	.main-img {
 		height: auto;
+		margin: 30px auto 30px;
 	}
 	.arrow-container {
 		display: none;
 	}
+	.intro-home {
+		margin: 0 auto 30px;
+	}
 	/* === HOME - BOUTIQUE === */
+	.boutique {
+		margin-bottom: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	.boutique .row:first-of-type {
+		margin-bottom: 30px;
+	}
+	.shop-featured {
+		min-height: auto;
+	}
+	.shop-text {
+		display: block;
+		height: auto;
+	}
 	.shop-article-inner {
 		min-height: auto;
 	}
+	.shop-text .inner {
+		padding-left: 0;
+		padding-right: 0;
+		min-height: 222px;
+		display: block;
+	}
+	.shop-text p {
+		line-height: 20px;
+		margin-bottom: 30px;
+	}
+	.shop-cta {
+		padding: 6px 50px;
+	}
+	.shop-article-inner figcaption, .shop-article-inner figcaption h3, .shop-article-inner figcaption p {
+		opacity: 1;
+	}
 	/* === INSTAGRAM - HOME === */
+	.insta-push {
+		margin-bottom: 30px;
+	}
 	.insta-home ul li {
 		width: 29%;
 		margin: 0 2%;
+	}
+	.join-mi {
+		margin: 0 auto 30px;
+		padding: 30px 0;
 	}
 	/* === MAIN IMAGE - ABOUT === */
 	.join-community .col-sm-6 {
@@ -26,6 +68,9 @@
 	}
 	.join-community .col-md-4:last-of-type .inner {
 		min-height: 150px;
+	}
+	.stories-about {
+		margin-bottom: 30px;
 	}
 	/* === STORIES === */
 	.breadcrumb {
@@ -170,6 +215,9 @@
 	.main-menu ul li {
 		padding: 0 12px;
 	}
+	.menu-mobile ul.menu-mobile-main {
+		margin: 0px 0 0 0;
+	}
 	/* === HEADER - STICKY === */
 	.sticky-header nav {
 		display: none;
@@ -193,6 +241,15 @@
 	.main-img img.main-img-mobile {
 		display: block;
 	}
+	/* === INTRO - HOME === */
+	.intro-home h2 {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.intro-home  h2 br {
+		display: none;
+	}
+
 	/* === HOME - BOUTIQUE === */
 	.shop-featured, .shop-text {
 		min-height: auto;
@@ -204,35 +261,25 @@
 	.shop-article:last-of-type .shop-article-inner {
 		margin-bottom: 0;
 	}
-	.shop-article-inner img {
-		opacity: 0.6;
-	}
 	.shop-article-inner figcaption h3 {
 		opacity: 1;
-		-webkit-transform: translate3d(0%, 0%, 0);
-		transform: translate3d(0%, 0%, 0);
-		-webkit-transition-delay: 0.2s;
-		transition-delay: 0.2s;
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.shop-article-inner figcaption p {
 		opacity: 1;
-		-webkit-transform: translate3d(0%, 0%, 0);
-		transform: translate3d(0%, 0%, 0);
-		-webkit-transition-delay: 0.2s;
-		transition-delay: 0.2s;
-		font-size: 18px;
+		font-size: 16px;
 	}
-	.shop-article-inner figcaption:before {
-		background: #f3f3f3;
-		top: 50%;
-		opacity: 1;
-		-webkit-transition-delay: 0s;
-		transition-delay: 0s;
+	.shop-text .inner {
+		min-height: auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	/* === HOME - STORIES / ABOUT === */
 	.stories-about .col-sm-6:first-of-type {
 		margin-bottom: 30px;
+	}
+	.shop-article-inner figcaption {
+		height: 50%;
 	}
 	.stories-about figure {
 		margin-top: 10px;
@@ -311,6 +358,10 @@
 		display: none;
 	}
 	/* === FOOTER === */
+	footer {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 	footer .column {
 		text-align: center;
 	}
@@ -319,6 +370,9 @@
 		border-bottom: 1px solid #f3f3f3;
 		padding-top: 15px;
 		padding-bottom: 15px;
+	}
+	footer .footer-copyright {
+		margin-top: 0;
 	}
 	footer .column:first-of-type .inner {
 		padding-top: 0;
