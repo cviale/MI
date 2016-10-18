@@ -135,7 +135,8 @@ $(document).ready(function() {
 		dots: false,
 		arrows: false,
 		centerMode: true,
-		focusOnSelect: true
+		focusOnSelect: true,
+		vertical: true
 	});
 
 	// Isotope - Cat Shop

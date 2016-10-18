@@ -47,6 +47,9 @@
 	.shop-article-inner figcaption, .shop-article-inner figcaption h3, .shop-article-inner figcaption p {
 		opacity: 1;
 	}
+	.stories-about figure figcaption, .stories-about figure figcaption h3, .stories-about figure figcaption p {
+		opacity: 1;
+	}
 	/* === INSTAGRAM - HOME === */
 	.insta-push {
 		margin-bottom: 30px;
@@ -281,8 +284,8 @@
 	.shop-article-inner figcaption {
 		height: 50%;
 	}
-	.stories-about figure {
-		margin-top: 10px;
+	.stories-about .text-center:first-of-type figure {
+		margin-bottom: 30px;
 	}
 	/* === REJOIGNEZ MI - HOME === */
 	.join-mi h2 {
