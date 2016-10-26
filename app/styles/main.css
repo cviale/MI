@@ -580,7 +580,7 @@ ul.header-social-networks li a {
 					font-weight: 500;
 				}
 				.shop-article-inner p {
-					font-weight: 300;
+					font-weight: 400;
 					font-size: 12px;
 				}
 				.shop-article-inner:hover figcaption {
@@ -1141,7 +1141,7 @@ ul.header-social-networks li a {
 
 /* === SHOP === */
 .shop-products-featured {
-	margin: 70px auto;
+	margin: 0 auto 70px;
 }
 	.shop-products-featured .img-mobile {
 		display: none;
@@ -1159,6 +1159,18 @@ ul.header-social-networks li a {
 			min-height: 360px;
 			width: 100%;
 			background: #f3f3f3;
+		}
+			.shop .shop-article-inner figcaption {
+				margin: 0 10%;
+				height: 150px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		.shop .shop-article-inner:hover {
+			background: #000000;
+		}
+		.shop .shop-article-inner:hover img {
+			opacity: 0.5;
 		}
 
 /* === SINGLE SHOP === */
@@ -1205,7 +1217,7 @@ ul.header-social-networks li a {
 		.quantity-product select {
 			border: none;
 			background: #f3f3f3;
-			padding: 13px 6px;
+			padding: 0;
 			vertical-align: top;
 			font-size: 15px;
 		}
@@ -1214,11 +1226,11 @@ ul.header-social-networks li a {
 		}
 	.add-to-cart {
 		text-transform: uppercase;
-		font-size: 18px;
+		font-size: 17px;
 		background: #282828;
 		color: #ffffff;
 		border: none;
-		font-weight: 100;
+		font-weight: 300;
 		padding: 10px 20px;
 		vertical-align: top;
 		margin: 0 0 40px 0;
@@ -1324,7 +1336,7 @@ ul.header-social-networks li a {
 		font-weight: 500;
 	}
 	.shop-single .shop-article-inner p {
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 12px;
 	}
 
@@ -1360,11 +1372,30 @@ ul.header-social-networks li a {
 	background: #f3f3f3;
 }
 
-
-
-
-
-
+/* === SEARCH === */
+.search h1 {
+	margin: 0;
+}
+.search .search-results {
+	margin: 70px auto;
+}
+	.search .cat-products-grid article {
+		width: 30.8%;
+		min-height: auto;
+		background: #f3f3f3;
+	}
+	.search .filters {
+		text-align: center;
+		background: #f3f3f3;
+		padding: 20px 0;
+		margin-top: 70px;
+	}
+		.search .filters h2 {
+			text-align: center;
+		}
+		.search .filters button {
+			display: inline-block;
+		}
 
 
 
