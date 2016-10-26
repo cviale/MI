@@ -165,7 +165,7 @@ ul.header-social-networks li a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 2;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -566,22 +566,22 @@ ul.header-social-networks li a {
 					}
 				.shop-article-inner h3,
 				.shop-article-inner p {
-					padding: 10px 0;
+					padding: 5px 0;
 					margin: 0;
-					opacity: 0;
 					color: #000000;
 					text-transform: uppercase;
 					letter-spacing: 1px;
+					opacity: 0;
 				}
 				.shop-article-inner h3 {
 					font-size: 14px;
 					margin-bottom: 0px;
 					font-family: 'Raleway', sans-serif;
-					font-weight: 700;
+					font-weight: 500;
 				}
 				.shop-article-inner p {
 					font-weight: 300;
-					font-size: 14px;
+					font-size: 12px;
 				}
 				.shop-article-inner:hover figcaption {
 					opacity: 1;
@@ -1086,44 +1086,50 @@ ul.header-social-networks li a {
 			font-weight: bold;
 			vertical-align: top;
 		}
+	.title-selection-carousel {
+		padding-bottom: 10px;
+	}
 	.selection-carousel {
 		margin-bottom: 70px;
 	}
+		.selection-carousel .slick-slide {
+			outline: none;
+		}
+		.selection-carousel .slick-slide:focus {
+			outline: none;
+		}
 		.selection-carousel .shop-article-inner {
 			min-height: 220px;
 			width: auto;
+			padding: 0 15px;
 		}
 			.selection-carousel .slick-next, .selection-carousel .slick-next:hover, .selection-carousel .slick-next:active, .selection-carousel .slick-next:focus {
 				background: url('../images/slick-nav-black.png');
 				background-repeat: no-repeat;
 				background-position: center;
-				background-size: 28px;
-				background-color: #ffffff;
+				background-size: 50px;
 				width: 50px;
 				height: 50px;
 				transform: rotate(270deg);
-				right: 5px;
+				right: -60px;
 				top: 50%;
 				margin-top: -20px;
 				transform: ;
 				z-index: 1;
-				border: 1px solid #282828;
 			}
 			.selection-carousel .slick-prev, .selection-carousel .slick-prev:hover, .selection-carousel .slick-prev:active, .selection-carousel .slick-prev:focus {
 				background: url('../images/slick-nav-black.png');
 				background-repeat: no-repeat;
 				background-position: center;
-				background-size: 28px;
-				background-color: #ffffff;
+				background-size: 50px;
 				width: 50px;
 				height: 50px;
 				transform: rotate(90deg);
-				left: -5px;
+				left: -60px;
 				top: 50%;
 				margin-top: -20px;
 				transform: ;
 				z-index: 1;
-				border: 1px solid #282828;
 			}
 			.selection-carousel .slick-dots {
 				bottom: 0;
@@ -1135,7 +1141,7 @@ ul.header-social-networks li a {
 
 /* === SHOP === */
 .shop-products-featured {
-	margin: 30px auto;
+	margin: 70px auto;
 }
 	.shop-products-featured .img-mobile {
 		display: none;
@@ -1143,14 +1149,17 @@ ul.header-social-networks li a {
 	.shop-products-featured img {
 		width: 100%;
 	}
-.mea-products .mea-products-item {
-	margin-bottom: 30px;
+.mea-products {
+	margin-bottom: 40px;
 }	
-	.mea-products .mea-products-item .inner {
-		min-height: 360px;
-		width: 100%;
-		background: #f3f3f3;
-	}
+	.mea-products .mea-products-item {
+		margin-bottom: 30px;
+	}	
+		.mea-products .mea-products-item .inner {
+			min-height: 360px;
+			width: 100%;
+			background: #f3f3f3;
+		}
 
 /* === SINGLE SHOP === */
 .mobile-product {
@@ -1163,12 +1172,13 @@ ul.header-social-networks li a {
 	margin-bottom: 70px;
 }
 	.slider-nav {
-		max-height: 475px;
+		max-height: 570px;
 		overflow-y: hidden;
 	}
 		.slider-nav img {
-			padding: 10px;
+			padding: 10px 0;
 			width: 100%;
+			outline: none;
 		}
 	.product-img img {
 		width: 100%;
@@ -1176,33 +1186,42 @@ ul.header-social-networks li a {
 	.details-product h1 {
 		text-align: left;
 		font-size: 24px;
-		font-weight: 500;
-		margin: 0 0 20px 0;
-		font-family: 'Raleway', sans-serif;
-	}
-	.price {
-		font-size: 22px;
 		font-weight: 400;
 		margin: 0 0 20px 0;
+	}
+	.price {
+		font-size: 20px;
+		font-weight: 300;
+		margin: 0 0 40px 0;
 	}
 	.quantity-product {
 		border: none;
 		background: #f3f3f3;
-		padding: 13px 6px;
+		padding: 11px 6px;
+		display: inline-block;
 		vertical-align: top;
-		font-size: 15px;
-		margin: 0 10px 20px 0;
+		margin: 0 10px 40px 0;
 	}
+		.quantity-product select {
+			border: none;
+			background: #f3f3f3;
+			padding: 13px 6px;
+			vertical-align: top;
+			font-size: 15px;
+		}
+		.quantity-product select:focus {
+			outline: none;
+		}
 	.add-to-cart {
 		text-transform: uppercase;
-		font-size: 20px;
+		font-size: 18px;
 		background: #282828;
 		color: #ffffff;
 		border: none;
 		font-weight: 100;
 		padding: 10px 20px;
 		vertical-align: top;
-		margin: 0 0 20px 0;
+		margin: 0 0 40px 0;
 		letter-spacing: 1px;
 	}
 	.details-product .description {
@@ -1214,11 +1233,24 @@ ul.header-social-networks li a {
 			text-transform: uppercase;
 			font-weight: 500;
 			font-family: 'Raleway', sans-serif;
+			margin-bottom: 5px;
 		}
 		.details-product .description p {
 			font-size: 14px;
 			line-height: 20px;
 		}
+	.wishlist, .share-product {
+		margin-top: 10px;
+	}	
+	.wishlist li {
+		padding: 10px 0px;
+	}
+	.share-product li a:hover, .wishlist li a:hover {
+		background: none;
+	}
+	.share-product .fa, .wishlist .fa {
+		font-size: 18px;
+	}
 	.details-product .inside {
 		border: 1px solid #f3f3f3;
 		padding: 20px;
@@ -1229,12 +1261,72 @@ ul.header-social-networks li a {
 			text-transform: uppercase;
 			font-weight: 500;
 			font-family: 'Raleway', sans-serif;
+			margin-bottom: 5px;
 		}
 		.details-product .inside p {
 			font-size: 14px;
 			line-height: 20px;
 			margin: 0;
 		}
+.shop-single .shop-article-inner {
+	width: 100%;
+	color: #fff;
+	position: relative;
+	float: left;
+	overflow: hidden;
+	text-align: center;
+}
+	.shop-single .shop-article-inner img {
+		opacity: 1;
+		width: 100%;
+		-webkit-transition: opacity 0.35s;
+		transition: opacity 0.35s;
+		width: 100%;
+		outline: none;
+	}
+	.shop-single .shop-article-inner figcaption {
+		position: absolute;
+		left: 0;
+		top: initial;
+		bottom: 0;
+		width: 80%;
+		height: auto;
+		background: none;
+		margin: 0 10%;
+		opacity: 1;
+		transition: all 0.3s ease-in;
+	}
+	.shop-single .shop-featured .shop-article-inner figcaption {
+		transform: translateY(-50%);
+		top: 50%;
+		margin: 0 10%;
+	}
+		.shop-single .figcaption-inner {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 100%;
+		}
+	.shop-single .shop-article-inner h3,
+	.shop-single .shop-article-inner p {
+		padding: 5px 0;
+		margin: 0;
+		color: #000000;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		opacity: 1;
+	}
+	.shop-single .shop-article-inner h3 {
+		font-size: 14px;
+		margin-bottom: 0px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+	}
+	.shop-single .shop-article-inner p {
+		font-weight: 300;
+		font-size: 12px;
+	}
 
 /* === CATS SHOP === */
 .cat-products-filters h1 {
