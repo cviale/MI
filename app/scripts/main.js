@@ -63,7 +63,7 @@ $(document).ready(function() {
 		centerMode: false,
 		speed: 1000,
 		infinite: true,
-		slidesToShow: 3,
+		slidesToShow: 4,
 		dots: false,
 		draggable: true,
 		autoplay: false,
