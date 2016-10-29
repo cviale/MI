@@ -272,11 +272,22 @@
 					padding: 0;
 				}
 	/* === CONNEXION === */
+	.cart-products {
+		margin: 30px auto 10px;
+	}
+	.cart-payment {
+		margin-bottom: 30px;
+	}
 	.connexion {
 		margin-bottom: 30px;
 	}
 	.connexion .col-md-5:first-of-type {
 		margin-bottom: 50px;
+	}
+	/* === PANIER === */
+
+	.payment-steps .step {
+		max-width: 120px;
 	}
 
 
@@ -508,6 +519,25 @@
 					.search .shop-article-inner h3, .search .shop-article-inner p {
 						padding: 0;
 					}
+	/* === CONNEXION === */
+	.payment-steps {
+		text-align: left;
+	}
+	.payment-steps .step {
+		max-width: 100px;
+	}
+	.cart-products table {
+		width: 600px;
+	}
+	.cart-products table tbody tr:last-of-type td {
+		border: none;
+	}
+	.discount-code {
+		margin: 0 auto 0;
+	}
+	.cart-payment-button div div:last-of-type {
+		padding-right: 0px;
+	}
 
 
 

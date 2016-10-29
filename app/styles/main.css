@@ -1208,8 +1208,8 @@ ul.header-social-networks li a {
 			overflow: hidden;
 			margin: 50px auto;
 			position: relative;
-			cursor: -webkit-zoom-in;
-			cursor: zoom-in;
+			cursor: crosshair;
+			cursor: crosshair;
 		}
 		.thumb-show img {
 			width: 100%;
@@ -1515,12 +1515,163 @@ ul.header-social-networks li a {
 			border: 1px solid #282828;
 		}
 
-
-
-
-
-
-
+/* === PANIER === */
+.payment-steps {
+	background: none;
+	margin: 30px auto;
+	text-align: center;
+	background: #f3f3f3;
+	padding: 20px 0;
+}
+	.payment-steps h2 {
+		font-size: 18px;
+		font-weight: 300;
+		text-transform: uppercase;
+		font-family: 'Playfair Display', serif;
+		font-style: italic;
+	}
+	.payment-steps .step {
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		max-width: 150px;
+		text-transform: uppercase;
+		font-size: 11px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+		letter-spacing: 1px;
+	}
+		.payment-steps .step.active {
+			font-weight: 700;
+		}
+		.payment-steps .step span {
+			font-family: 'Roboto', sans-serif;
+		}
+	.cart-products {
+		margin: 70px auto 10px;
+	}
+		.table-responsive {
+			min-height: .01%;
+			overflow-x: auto;
+			border: none;
+			margin-bottom: 0;
+		}
+		.cart-products table {
+			width: 100%;
+			font-size: 14px;
+		}
+			.cart-products table thead tr td {
+				text-transform: uppercase;
+				font-weight: 400;
+				font-size: 14px;
+			}
+			.cart-products table tbody tr td {
+				border-bottom: 1px solid #f3f3f3;
+				padding: 20px 0;
+			}
+			.cart-products table tr td:nth-of-type(1) {
+				width: 150px;
+			}
+			.cart-products table tr td:nth-of-type(2) {
+				width: 620px;
+				padding: 0 20px;
+			}
+			.cart-products table tr td:nth-of-type(3) {
+				width: 150px;
+			}
+			.cart-products table tr td:nth-of-type(4) {
+				width: 150px;
+			}
+			.cart-products table tr td:nth-of-type(5) {
+				width: 70px;
+			}
+			.cart-products table tr td:nth-of-type(6) {
+				width: 30px;
+				font-size: 10px;
+			}
+				.cart-products table tr td img {
+					max-width: 100%;
+				}
+				.cart-products table tr td .delete-product {
+					background: #f3f3f3;
+					padding: 5px 9px;
+					border-radius: 50%;
+					cursor: pointer;
+				}
+	.cart-payment {
+		margin-bottom: 70px;
+	}
+		.discount-code {
+			margin: 30px auto 0;
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+		}
+			.discount-code form {
+				max-width: 400px;
+				position: relative;
+			}
+				.discount-code input {
+					padding: 15px 10px;
+					width: 100%;
+					-webkit-appearance: none;
+					border-radius: 0;
+					border: 1px solid #f3f3f3;
+				}
+				.discount-code button {
+					height: 42px;
+					line-height: 42px;
+					border: none;
+					background-color: transparent;
+					position: absolute;
+					top: 2px;
+					right: 0px;
+					font-size: 12px;
+					color: #191A1C;
+					letter-spacing: 1.5px;
+					padding: 0 10px;
+					text-transform: uppercase;
+				}
+		.cart-payment-button {
+			text-align: right;
+			margin: 30px auto 0;
+		}
+			.cart-payment-button div {
+				font-size: 16px;
+				padding-bottom: 10px;
+				font-weight: 400;
+				display: block;
+			}
+			.cart-payment-button div:after {
+				content: '';
+				clear: both;
+				display: table;
+			}
+				.cart-payment-button div div {
+					display: inline-block;
+					vertical-align: top;
+				}
+				.cart-payment-button div div:first-of-type {
+					padding-right: 20px;
+				}
+				.cart-payment-button div div:last-of-type {
+					font-weight: 500;
+					padding-right: 60px;
+				}
+			.cart-payment-button button {
+				text-transform: uppercase;
+				font-size: 17px;
+				background: #282828;
+				color: #ffffff;
+				border: none;
+				font-weight: 300;
+				padding: 10px 65px;
+				vertical-align: top;
+				margin: 0;
+				letter-spacing: 1px;
+				display: block;
+				float: right;
+			}
 
 
 
