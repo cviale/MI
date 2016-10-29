@@ -93,6 +93,9 @@
 	.wrapper-article h1 {
 		font-size: 28px;
 	}
+	.main-article {
+		margin-bottom: 30px;
+	}
 	.main-article h1 {
 		margin-top: 10px;
 	}
@@ -103,7 +106,7 @@
 		margin: 20px 0 20px;
 	}
 	.main-article .main-article-content {
-		min-height: 280px;
+		min-height: 200px;
 	}
 	.wrapper-article h2 {
 		font-size: 22px;
@@ -135,6 +138,11 @@
 		opacity: 1;
 	}
 	/* === STORY === */
+	.single-story-top,
+	.single-story-content .row,
+	.single-story-carousel {
+		margin-bottom: 30px;
+	}
 	.single-story-content quote {
 		font-size: 18px;
 		line-height: 28px;
@@ -175,16 +183,47 @@
 		margin-bottom: 60px !important;
 	}
 	.selection-carousel .slick-next, .selection-carousel .slick-next:hover, .selection-carousel .slick-next:active, .selection-carousel .slick-next:focus {
-		right: 30px;
+		right: 35px;
 		background-size: 50px;
 	}
 	.selection-carousel .slick-prev, .selection-carousel .slick-prev:hover, .selection-carousel .slick-prev:active, .selection-carousel .slick-prev:focus {
-		left: 30px;
+		left: 35px;
 		background-size: 50px;
 	}
 	.selection-carousel .slick-dots {
 		bottom: -30px;
 	}
+
+	/* === SHOP === */
+	.shop .slick-next {
+		right: 10px;
+	}
+	.shop .slick-prev {
+		left: 10px;
+	}
+	.shop .shop-products-featured {
+		margin: 0 auto 30px;
+	}
+	.shop .mea-products {
+		margin-bottom: 0;
+	}
+	.shop .shop-article-inner {
+		background: #000000;
+	}
+	.shop .shop-article-inner img {
+		opacity: 0.5;
+	}
+	.shop .shop-article-inner figcaption,
+	.shop-article-inner figcaption h3,
+	.shop-article-inner figcaption p {
+		opacity: 1;
+	}
+	.shop .shop-article-inner figcaption {
+		width: 80%;
+		height: 120px;
+		background: #ffffff;
+	}
+
 	/* === SINGLE SHOP === */
 	.global-product {
 		margin-bottom: 30px;
@@ -232,7 +271,13 @@
 				.search .shop-article-inner h3, .search .shop-article-inner p {
 					padding: 0;
 				}
-
+	/* === CONNEXION === */
+	.connexion {
+		margin-bottom: 30px;
+	}
+	.connexion .col-md-5:first-of-type {
+		margin-bottom: 50px;
+	}
 
 
 
@@ -402,6 +447,11 @@
 	.join-community .inner h3 {
 		font-size: 22px;
 	}
+	/* === STORIES === */
+	.main-article .main-article-content {
+		min-height: 280px;
+	}
+
 	/* === STORY === */
 	.slick-next, .slick-next:hover, .slick-next:active, .slick-next:focus {
 		width: 40px;
@@ -419,6 +469,7 @@
 	.single-story-content .row .col-md-6:last-of-type {
 		margin-bottom: 0px;
 	}
+
 	/* === SHOP === */
 	.shop-products-featured .img-mobile {
 		display: block;
