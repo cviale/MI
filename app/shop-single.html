@@ -28,7 +28,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
 
 		<!-- Apple touch icons -->
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icons/apple-touch-icon-57x57.png" />
 		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icons/apple-touch-icon-72x72.png" />
 		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icons/apple-touch-icon-76x76.png" />
@@ -69,9 +68,9 @@
 					<li><a href="mailto:contact@maisonintegre.com"><i class="fa fa-envelope-o"></i></a></li>
 				</ul>
 				<ul class="nav nav-pills pull-right header-user-menu">
-				<li><a class="hvr-underline-from-center" href="#">Wishlist</a></li>
-					<li><a class="hvr-underline-from-center" href="#">Compte</a></li>
-					<li><a class="hvr-underline-from-center" href="#">Panier (0)</a></li>
+					<li><a href="#">Wishlist</a></li>
+					<li><a href="#">Compte</a></li>
+					<li><a href="#">Panier (0)</a></li>
 				</ul>
 			</nav>
 			<h1 id="logo">
@@ -155,17 +154,17 @@
 		</section>
 
 		<!-- Breacrumb -->
-		<section class="container breadcrumb">
+		<section class="container-fluid breadcrumb">
 			<a href="index.html">Accueil</a> <span>›</span> <a href="#">Shop</a> <span>›</span> <a href="#">Catégorie</a> <span>›</span> Ouaga
 		</section>
 
 		<!-- Détails produits -->
-		<section class="container mobile-product">
+		<section class="container-fluid mobile-product">
 			<h1>Titre du produit</h1>
 			<div class="price">285 €</div>
 		</section>
 
-		<section class="container global-product">
+		<section class="container-fluid global-product">
 			<div class="row">
 				<div class="col-md-6 product-img">
 					<div class="slider-for">
@@ -183,7 +182,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-2">
+				<div class="col-md-2 product-thumb">
 					<div class="slider-nav">
 						<img src="images/produits/1-282_recadre.jpg" alt="titre produit">
 						<img src="images/produits/1-282_recadre.jpg" alt="titre produit">
@@ -195,8 +194,7 @@
 					<div class="inner">
 						<h1>Ouaga</h1>
 						<div class="price">285 €</div>
-						<div class="quantity-product">
-							<select name="qty">
+							<select class="quantity-product" name="qty">
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -208,17 +206,18 @@
 								<option value="9">9</option>
 								<option value="10">10</option>
 							</select>
-						</div>
 						<button class="add-to-cart">Ajouter au panier</button>
 						<div class="description">
 							<h3>Détails</h3>
 							<p>This product is a great every day bag or as companion on your daily adventures. Our veld image printed in a putty grey solvent free ink on a black canvas pocket of the bag and the entire bag is constructed with sturdy dark.</p>
 							<p>W 13 x H 17 (15.5 to gusset) x D 4.5 in. (33 x 43 x 11.5 cm) <br>
 							dark brown leather strap detail and reinforced with antique brass hardware antique brass metal zipper</p>
-							<ul class="nav nav-pills pull-left wishlist">
-								<li><i class="fa fa-heart-o"></i></li>
+							<ul class="nav nav-pills wishlist">
+								<li><a href="#">
+									<i class="fa fa-heart-o"></i> <span>Ajouter à ma wishlist</span>
+								</a></li>
 							</ul>
-							<ul class="nav nav-pills pull-right share-product">
+							<ul class="nav nav-pills share-product">
 								<li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
 								<li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -325,11 +324,19 @@
 				<div class="col-md-4 hidden-sm text-center pro-home">
 					<div class="inner">
 						<a href="mailto:contact@maisonintegre.fr">
-							<h2><span>PROFESSIONNELS ?</span><br>Maison Integre par chiner pour vous</h2>
+							<h2><span>PROFESSIONNELS ?</span><br>Maison Intègre part chiner pour vous.</h2>
 						</a>
 					</div>
 				</div>
 			</div>
+		</section>
+
+		<!-- Search pop-in -->
+		<section class="search-popin">
+			<a href="#" class="search-popin-close"></a>
+			<form method="post" action="">
+				<input type="text" id="search-query" name="search-query" placeholder="Rechercher" value="">
+			</form>
 		</section>
 
 		<!-- Footer -->
@@ -369,7 +376,7 @@
 							<h3>Appelez-nous</h3>
 							<p class="numero">01 00 00 00 00</p>
 							<p>Du lundi au vendredi de 10H à 17H<br>
-							<span class="hide">Email :</span> <a href="mailto:contact@maisonintegre.fr">contact@maisonintegre.fr</a></p>
+							<span class="hide">Email :</span> <a href="mailto:contact@maisonintegre.com">contact@maisonintegre.com</a></p>
 						</div>
 					</div>
 				</div>

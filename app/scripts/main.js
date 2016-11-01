@@ -37,6 +37,14 @@ $(document).ready(function() {
 		$('html, body').animate({ scrollTop: $('.intro-home').offset().top - 90}, 1000);
 	});
 
+	// Show/Hide Search Pop-in
+	$('.search').click(function() {
+		$('.search-popin').fadeIn('slow');
+	});
+	$('.search-popin-close').click(function() {
+		$('.search-popin').fadeOut('slow');
+	});
+
 	// Stories / About - Home
 	$('.hover').mouseleave(
 		function() {
@@ -134,7 +142,7 @@ $(document).ready(function() {
 		asNavFor: '.slider-for',
 		dots: false,
 		arrows: false,
-		centerMode: true,
+		centerMode: false,
 		focusOnSelect: true,
 		vertical: true
 	});
@@ -176,28 +184,55 @@ $(document).ready(function() {
 	}
 
 	// Zoom image produit
-	var src = $('.thumb-show').find('img').attr("src");
-	$('.thumb-show').append('<img class="zoom" src="' + src + '" >');
-	$('.thumb-show').mouseenter(function() {
-		$(this).mousemove(function(event) {
-			var offset = $(this).offset();
-			var left = event.pageX - offset.left;
-			var top = event.pageY - offset.top;
-			$(this).find('.zoom').css({
-				width: '200%',
-				opacity: 1,
-				left: -left,
-				top: -top
-			})
-		});
-	});
-	$('.thumb-show').mouseleave(function() {
-		$(this).find('.zoom').css({
-			width: '100%',
-			opacity: 0,
-			left: 0,
-			top: 0
-		})
+	$('.product-img .inner').click(function() {
+		if (!$('.global-product').hasClass('zoom-active')) {
+			$('.global-product').addClass('zoom-active');
+			$('.details-product').hide();
+			$('.product-img').removeClass('col-md-6').addClass('col-md-12');
+			$('.slider-for').slick('reinit');
+			$('.global-product').css('padding-right', '0');
+			$('.product-thumb').css({
+				opacity: '0', 
+				position: 'absolute', 
+	 			top: '0', 
+			});
+		} else {
+			$('.global-product').removeClass('zoom-active');
+			$('.details-product').show();
+			$('.product-img').removeClass('col-md-12').addClass('col-md-6');
+			$('.slider-for').slick('reinit');
+			$('.global-product').css('padding-right', '15px');
+			$('.product-thumb').css('opacity', '1');
+			$('.product-thumb').css({
+				opacity: '1', 
+				position: 'initial', 
+	 			top: '0', 
+			});
+		}
 	});
 
+	// Zoom image produit
+	// var src = $('.thumb-show').find('img').attr('src');
+	// $('.thumb-show').append('<img class="zoom" src="' + src + '" >');
+	// $('.thumb-show').mouseenter(function() {
+	// 	$(this).mousemove(function(event) {
+	// 		var offset = $(this).offset();
+	// 		var left = event.pageX - offset.left;
+	// 		var top = event.pageY - offset.top;
+	// 		$(this).find('.zoom').css({
+	// 			width: '200%',
+	// 			opacity: 1,
+	// 			left: -left,
+	// 			top: -top
+	// 		})
+	// 	});
+	// });
+	// $('.thumb-show').mouseleave(function() {
+	// 	$(this).find('.zoom').css({
+	// 		width: '100%',
+	// 		opacity: 0,
+	// 		left: 0,
+	// 		top: 0
+	// 	})
+	// });
 });

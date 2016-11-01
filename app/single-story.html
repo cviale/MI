@@ -28,7 +28,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
 
 		<!-- Apple touch icons -->
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<link rel="apple-touch-icon" sizes="57x57" href="images/apple-touch-icons/apple-touch-icon-57x57.png" />
 		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icons/apple-touch-icon-72x72.png" />
 		<link rel="apple-touch-icon" sizes="76x76" href="images/apple-touch-icons/apple-touch-icon-76x76.png" />
@@ -69,9 +68,9 @@
 					<li><a href="mailto:contact@maisonintegre.com"><i class="fa fa-envelope-o"></i></a></li>
 				</ul>
 				<ul class="nav nav-pills pull-right header-user-menu">
-					<li><a class="hvr-underline-from-center" href="#">Wishlist</a></li>
-					<li><a class="hvr-underline-from-center" href="#">Compte</a></li>
-					<li><a class="hvr-underline-from-center" href="#">Panier (0)</a></li>
+					<li><a href="#">Wishlist</a></li>
+					<li><a href="#">Compte</a></li>
+					<li><a href="#">Panier (0)</a></li>
 				</ul>
 			</nav>
 			<h1 id="logo">
@@ -168,8 +167,11 @@
 
 		<!-- Top contenu -->
 		<section class="container single-story-top">
-			<span class="cat">Catégorie</span>
 			<h1>Titre de la story</h1>
+			<ul class="share-content">
+				<li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=maisonintegre.com"><i class="fa fa-facebook"></i></a></li>
+				<li><a target="_blank" href="https://twitter.com/home?status=link"><i class="fa fa-twitter"></i></a></li>
+			</ul>
 			<p class="intro">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
 		</section>
 
@@ -203,18 +205,18 @@
 				<div><img src="images/story/story-5.JPG"></div>
 			</div>
 
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
+			<div class="row single-story-quote">
+				<div class="col-md-6 col-sm-6 single-story-quote-img">
 					<img src="images/story/story-6.JPG">
 				</div>
-				<div class="col-md-6 col-sm-6">
+				<div class="col-md-6 col-sm-6 single-story-quote-text">
 					<quote><span>&#8220;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting the printing and typesetting industry.<span>&#8221;</span></quote>
 				</div>
 			</div>
 		</section>
 
 		<!-- Selection du moment -->
-		<h2 class="title-selection-carousel">Dans le même esprit</h2>
+		<h2 class="title-selection-carousel">Découvrir sur le shop</h2>
 		<section class="container selection-carousel">
 			<div>
 				<figure class="shop-article-inner">
@@ -305,11 +307,19 @@
 				<div class="col-md-4 hidden-sm text-center pro-home">
 					<div class="inner">
 						<a href="mailto:contact@maisonintegre.fr">
-							<h2><span>PROFESSIONNELS ?</span><br>Maison Integre par chiner pour vous</h2>
+							<h2><span>PROFESSIONNELS ?</span><br>Maison Intègre part chiner pour vous.</h2>
 						</a>
 					</div>
 				</div>
 			</div>
+		</section>
+
+		<!-- Search pop-in -->
+		<section class="search-popin">
+			<a href="#" class="search-popin-close"></a>
+			<form method="post" action="">
+				<input type="text" id="search-query" name="search-query" placeholder="Rechercher" value="">
+			</form>
 		</section>
 
 		<!-- Footer -->
@@ -349,7 +359,7 @@
 							<h3>Appelez-nous</h3>
 							<p class="numero">01 00 00 00 00</p>
 							<p>Du lundi au vendredi de 10H à 17H<br>
-							<span class="hide">Email :</span> <a href="mailto:contact@maisonintegre.fr">contact@maisonintegre.fr</a></p>
+							<span class="hide">Email :</span> <a href="mailto:contact@maisonintegre.com">contact@maisonintegre.com</a></p>
 						</div>
 					</div>
 				</div>

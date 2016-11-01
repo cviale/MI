@@ -57,7 +57,7 @@
 		<script src="/bower_components/modernizr/modernizr.js"></script>
 		<!-- endbuild -->
 	</head>
-	<body class="search">
+	<body class="contact">
 		<!-- Header -->
 		<header class="container-fluid main-header">
 			<nav>
@@ -156,146 +156,72 @@
 
 		<!-- Breacrumb -->
 		<section class="container breadcrumb">
-			<a href="index.html">Accueil</a> <span>›</span> Recherche
+			<a href="index.html">Accueil</a> <span>›</span> Contact
 		</section>
 
-		<section class="container">
-			<h1><span>10</span> résultats pour « tabouret »</h1>
+		<section class="container contact-intro">
+			<h2>Contact</h2>
+			<h3>Notre service client est à votre disposition pour répondre à toutes vos questions.</h3>
+			<p class="text-center">Tel. 01 00 00 00 00<br>Du lundi au vendredi de 10h à 17h</p>
 		</section>
 
-		<div class="filters">
-			<h2>Filtres</h2>
-			<div class="ui-group">
-				<div class="button-group js-radio-button-group" data-filter-group="tissus">
-					<button class="button is-checked" data-filter="">All</button>
-					<button class="button" data-filter=".coussin">Coussins</button>
-					<button class="button" data-filter=".tabouret">Tabourets</button>
+		<section class="container contact-form">
+			<h2>Nous envoyer un message</h2>
+			<form post="get" action="">
+				<ul>
+					<li class="form-full-width">
+						<select name="civilite" class="" required="required">
+							<option value="" disabled="disabled" selected="selected">Sélectionner la raison de votre message*</option>
+							<option value="aide">Aide pour le processus d'achat</option>
+							<option value="suivi">Suivi de la commande</option>
+							<option value="informations">Informations relatives à la disponibilité des articles</option>
+							<option value="commentaires">Commentaires et suggestions</option>
+						</select>
+					</li>
+					<li class="left">Nom*<br>
+						<span>
+							<input type="text" name="nom" value="" required="required">
+						</span>
+					</li>
+					<li class="right">Prénom*<br>
+						<span>
+							<input type="text" name="prenom" value="" required="required">
+						</span>
+					</li>
+					<li class="left">Téléphone*<br>
+						<span>
+							<input type="text" name="telephone" value="" required="required">
+						</span>
+					</li>
+					<li class="right">Email*<br>
+						<span>
+							<input type="email" name="email" value="" required="required">
+						</span>
+					</li>
+					<li class="form-full-width">Objet*<br>
+						<span>
+							<input type="text" name="objet" value="" required="required">
+						</span>
+					</li>
+					<li class="form-full-width"> Message*<br>
+						<span>
+							<textarea name="message" cols="20" rows="10" required="required"></textarea>
+						</span>
+					</li>
+				</ul>
+				<div class="privacy-policy">
+					<span class="mandatory">* Champ obligatoire</span>
+					<div class="privacy">
+						<label>
+							<input type="checkbox" name="acceptPrivacyRegister" required="required"> Pour envoyer ce formulaire, vous devez accepter la <a href="#">politique de confidentialité</a>
+						</label>
+					</div>
 				</div>
-			</div>
-		</div>
+				<button type="submit" value="Envoyer" class="submit-contact-form">Envoyer</button>
 
-		<section class="container search-results">
-			<div class="row">
-				<div class="col-md-12 col-sm-12 grid cat-products-grid">
-					<article class="item coussin">
-						<figure class="shop-article-inner">
-							<a href="#">
-								<img src="images/produits/1-282_recadre.jpg" alt="illus-1"/>
-								<figcaption>
-									<div class="figcaption-inner">
-										<h3>Tabouret sénoufo</h3>
-										<p>215 €</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</article>
-					<article class="item tabouret">
-						<figure class="shop-article-inner">
-							<a href="#">
-								<img src="images/produits/1-282_recadre.jpg" alt="illus-1"/>
-								<figcaption>
-									<div class="figcaption-inner">
-										<h3>Tabouret sénoufo</h3>
-										<p>215 €</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</article>
-					<article class="item coussin">
-						<figure class="shop-article-inner">
-							<a href="#">
-								<img src="images/produits/1-282_recadre.jpg" alt="illus-1"/>
-								<figcaption>
-									<div class="figcaption-inner">
-										<h3>Tabouret sénoufo</h3>
-										<p>215 €</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</article>
-					<article class="item tabouret">
-						<figure class="shop-article-inner">
-							<a href="#">
-								<img src="images/produits/1-282_recadre.jpg" alt="illus-1"/>
-								<figcaption>
-									<div class="figcaption-inner">
-										<h3>Tabouret sénoufo</h3>
-										<p>215 €</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</article>
-					<article class="item coussin">
-						<figure class="shop-article-inner">
-							<a href="#">
-								<img src="images/produits/1-282_recadre.jpg" alt="illus-1"/>
-								<figcaption>
-									<div class="figcaption-inner">
-										<h3>Tabouret sénoufo</h3>
-										<p>215 €</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</article>
-					<article class="item tabouret">
-						<figure class="shop-article-inner">
-							<a href="#">
-								<img src="images/produits/1-282_recadre.jpg" alt="illus-1"/>
-								<figcaption>
-									<div class="figcaption-inner">
-										<h3>Tabouret sénoufo</h3>
-										<p>215 €</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</article>
-				</div>
-			</div>
-		</section>
 
-		<!-- Rejoignez l'univers MI -->
-		<section class="fluid-container join-mi">
-			<h3>Newsletter</h3>
-			<h2>Viens je t'emmène</h2>
-			<form action="">
-				<input title="email" type="email" placeholder=" Votre adresse mail" required>
-				<button class="button">Envoyer</button>
+				
 			</form>
-		</section>
-
-		<!-- Instagram / Push -->
-		<section class="container insta-push">
-			<div class="row">
-				<div class="col-md-8 text-center insta-home">
-					<div class="inner">
-						<h2><a target="_blank" href="https://www.instagram.com/maisonintegre/">#MAISONINTEGRE sur Instagram</a></h2>
-						<ul>
-							<li class="insta-home-item">
-								<a target="_blank" href="#"><img src="images/instagram/insta-1.jpg"></a>
-							</li>
-							<li class="insta-home-item">
-								<a target="_blank" href="#"><img src="images/instagram/insta-2.jpg"></a>
-							</li>
-							<li class="insta-home-item">
-								<a target="_blank" href="#"><img src="images/instagram/insta-3.jpg"></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-4 hidden-sm text-center pro-home">
-					<div class="inner">
-						<a href="mailto:contact@maisonintegre.fr">
-							<h2><span>PROFESSIONNELS ?</span><br>Maison Intègre part chiner pour vous.</h2>
-						</a>
-					</div>
-				</div>
-			</div>
 		</section>
 
 		<!-- Search pop-in -->
@@ -313,7 +239,6 @@
 					<div class="col-md-3 col-sm-3 col-xs-12 column footer-copyrights">
 						<div class="inner">
 							<img class="logo-footer" src="images/logo-maison-integre-j.svg" alt="Maison Intègre">
-							<!-- <p class="copyright">MAISON INTÈGRE © 2016 - TOUS DROITS RÉSERVÉS</p> -->
 						</div>
 					</div>
 					<div class="col-md-3 col-sm-3 col-xs-12 column footer-links">

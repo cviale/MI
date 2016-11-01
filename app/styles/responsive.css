@@ -91,7 +91,7 @@
 		margin: 15px auto;
 	}
 	.wrapper-article h1 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.main-article {
 		margin-bottom: 30px;
@@ -107,6 +107,8 @@
 	}
 	.main-article .main-article-content {
 		min-height: 200px;
+		display: block;
+		margin-top: 20px;
 	}
 	.wrapper-article h2 {
 		font-size: 22px;
@@ -126,15 +128,11 @@
 	.wall-articles .item .inner {
 		height: 310px;
 	}
-	.wall-articles .item .inner .item-img {
-		opacity: 0.3;
-	}
 	.wall-articles .item .inner .cat a,
 	.wall-articles .item .inner h2,
-	.wall-articles .item .inner p,
 	.wall-articles .item .inner .post-metas,
-	.wall-articles .item .inner .like,
-	.wall-articles .item .inner .st0 {
+	.wall-articles .item .inner .item-title
+	{
 		opacity: 1;
 	}
 	/* === STORY === */
@@ -179,6 +177,15 @@
 		-webkit-transition-delay: 0s;
 		transition-delay: 0s;
 	}
+	.single-story-carousel .slick-next {
+		right: 0;
+	}
+	.single-story-carousel .slick-prev {
+		left: 0;
+	}
+	.single-story-quote-text {
+		height: 240px;
+	}
 	.selection-carousel {
 		margin-bottom: 60px !important;
 	}
@@ -193,7 +200,6 @@
 	.selection-carousel .slick-dots {
 		bottom: -30px;
 	}
-
 	/* === SHOP === */
 	.shop .slick-next {
 		right: 10px;
@@ -223,13 +229,15 @@
 		height: 120px;
 		background: #ffffff;
 	}
-
 	/* === SINGLE SHOP === */
 	.global-product {
 		margin-bottom: 30px;
 	}
 	.mobile-product {
 		display: block;
+	}
+	.global-product {
+		padding-left: 15px;
 	}
 	.slider-nav {
 		display: none;
@@ -239,6 +247,9 @@
 	}
 	.price {
 		margin-bottom: 20px;
+	}
+	select.quantity-product {
+		text-indent: 5px;
 	}
 	.details-product .price {
 		display: none;
@@ -257,20 +268,20 @@
 	.search h1 {
 		font-size: 28px;
 	}
-		.search .filters {
-			margin-top: 30px;
-		}
-		.search .search-results {
-			margin: 30px auto;
-		}
-			.search .cat-products-grid article {
-				width: 29.3%;
-				min-height: auto;
-				background: #f3f3f3;
-			}
-				.search .shop-article-inner h3, .search .shop-article-inner p {
-					padding: 0;
-				}
+	.search .filters {
+		margin-top: 30px;
+	}
+	.search .search-results {
+		margin: 30px auto;
+	}
+	.search .cat-products-grid article {
+		width: 29.3%;
+		min-height: auto;
+		background: #f3f3f3;
+	}
+	.search .shop-article-inner h3, .search .shop-article-inner p {
+		padding: 0;
+	}
 	/* === CONNEXION === */
 	.cart-products {
 		margin: 30px auto 10px;
@@ -285,9 +296,15 @@
 		margin-bottom: 50px;
 	}
 	/* === PANIER === */
-
 	.payment-steps .step {
 		max-width: 120px;
+	}
+	/* === ABOUT === */
+	.about .wrapper-content {
+		width: 90%;
+	}
+	.wrapper-content-inner {
+		padding: 30px;
 	}
 
 
@@ -363,6 +380,9 @@
 		display: none;
 	}
 	/* === HOME - BOUTIQUE === */
+	.shop-text .inner {
+		padding: 20px;
+	}
 	.shop-featured, .shop-text {
 		min-height: auto;
 		height: auto;
@@ -383,7 +403,7 @@
 		width: 80%;
 		margin: 0 auto;
 		margin-left: 10%;
-		padding: 5px 10px;
+		padding: 15px 10px;
 	}
 	.shop-article-inner figcaption h3 {
 		opacity: 1;
@@ -394,7 +414,6 @@
 		font-size: 16px;
 	}
 	.shop-text .inner {
-		min-height: auto;
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
@@ -480,15 +499,11 @@
 	.single-story-content .row .col-md-6:last-of-type {
 		margin-bottom: 0px;
 	}
-
 	/* === SHOP === */
 	.shop-products-featured .img-mobile {
 		display: block;
 	}
 	/* === SINGLE SHOP === */
-	.mobile-product h1 {
-		font-size: 30px;
-	}
 	.quantity-product, .add-to-cart {
 		margin: 0 10px 20px 0;
 	}
@@ -519,7 +534,7 @@
 					.search .shop-article-inner h3, .search .shop-article-inner p {
 						padding: 0;
 					}
-	/* === CONNEXION === */
+	/* === CART === */
 	.payment-steps {
 		text-align: left;
 	}
@@ -532,11 +547,46 @@
 	.cart-products table tbody tr:last-of-type td {
 		border: none;
 	}
+	.continu-purchases {
+		margin-top: 0;
+	}
+	.continu-purchases a {
+		width: 100%;
+		padding: 10px 0;
+		display: block;
+		text-align: center;
+	}
+	.cart-payment-button {
+		text-align: center;
+	}
+	.cart-payment-button .total-cart div:last-of-type {
+		padding-right: 0px;
+	}
 	.discount-code {
 		margin: 0 auto 0;
+		width: 100%;
 	}
 	.cart-payment-button div div:last-of-type {
 		padding-right: 0px;
+	}
+	.cart-payment-button button.submit-cart {
+		margin-right: 0;
+		width: 100%;
+	}
+	/* === CATS SHOP === */
+	.cat-products-filters h1 {
+		margin-bottom: 10px;
+	}
+	.filters .ui-group:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+	.filters button {
+		float: left;
+	}
+	.cat-products-grid article {
+		width: 92%;
 	}
 
 
