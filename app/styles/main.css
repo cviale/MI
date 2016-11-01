@@ -545,7 +545,7 @@ ul.header-social-networks li a {
 					top: 0;
 					width: 80%;
 					height: 40%;
-					background: #ffffff;
+					background: rgba(255, 255, 255, 0.9);
 					margin: 30% 10%;
 					opacity: 0;
 					transition: all 0.3s ease-in;
@@ -616,7 +616,7 @@ ul.header-social-networks li a {
 			top: 0;
 			width: 80%;
 			height: 40%;
-			background: #ffffff;
+			background: rgba(255, 255, 255, 0.9);
 			margin: 30% 10%;
 			opacity: 0;
 			transition: all 0.3s ease-in;
@@ -1007,7 +1007,6 @@ ul.header-social-networks li a {
 			width: 100%;
 		}
 		.item-title {
-			background: rgba(255, 255, 255, 0.8);
 			padding: 20px;
 			opacity: 0;
 			transition: all 0.5s ease-in-out;
@@ -1015,7 +1014,7 @@ ul.header-social-networks li a {
 			left: 0;
 			top: 50%;
 			width: 80%;
-			background: #ffffff;
+			background: rgba(255, 255, 255, 0.9);
 			margin: 0 10%;
 			transform: translateY(-50%);
 		}
@@ -1356,7 +1355,7 @@ ul.header-social-networks li a {
 		font-weight: 300;
 		padding: 10px 20px;
 		vertical-align: top;
-		margin: 0 0 40px 0;
+		margin: 0 0 10px 0;
 		letter-spacing: 1px;
 		transition: all 0.3s ease-in-out;
 	}
@@ -1364,7 +1363,7 @@ ul.header-social-networks li a {
 		background: #505252;
 	}
 	.details-product .description {
-		margin: 0 0 20px 0;
+		margin: 40px 0 20px 0;
 	}
 		.details-product .description h3 {
 			margin: 0;
@@ -1427,65 +1426,6 @@ ul.header-social-networks li a {
 				line-height: 20px;
 				margin: 0;
 			}
-.shop-single .shop-article-inner {
-	width: 100%;
-	color: #fff;
-	position: relative;
-	float: left;
-	overflow: hidden;
-	text-align: center;
-}
-	.shop-single .shop-article-inner img {
-		opacity: 1;
-		width: 100%;
-		-webkit-transition: opacity 0.35s;
-		transition: opacity 0.35s;
-		width: 100%;
-		outline: none;
-	}
-	.shop-single .shop-article-inner figcaption {
-		position: absolute;
-		left: 0;
-		top: initial;
-		bottom: 0;
-		width: 80%;
-		height: auto;
-		background: none;
-		margin: 0 10%;
-		opacity: 1;
-		transition: all 0.3s ease-in;
-	}
-	.shop-single .shop-featured .shop-article-inner figcaption {
-		transform: translateY(-50%);
-		top: 50%;
-		margin: 0 10%;
-	}
-		.shop-single .figcaption-inner {
-			position: absolute;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 100%;
-		}
-	.shop-single .shop-article-inner h3,
-	.shop-single .shop-article-inner p {
-		padding: 5px 0;
-		margin: 0;
-		color: #000000;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		opacity: 1;
-	}
-	.shop-single .shop-article-inner h3 {
-		font-size: 14px;
-		margin-bottom: 0px;
-		font-family: 'Raleway', sans-serif;
-		font-weight: 600;
-	}
-	.shop-single .shop-article-inner p {
-		font-weight: 400;
-		font-size: 12px;
-	}
 
 /* === CATS SHOP === */
 .cat-products-filters h1 {
@@ -1532,14 +1472,33 @@ ul.header-social-networks li a {
 	width: 30%;
 	text-align: center;
 }
-	.cat-products-grid article img {
-		width: 100%;
+	.cat-products-grid .item-img {
+		position: relative;
 	}
+		.cat-products-grid article img {
+			width: 100%;
+		}
+		.cat-products-grid article.sold-out img {
+			opacity: 0.4;
+		}
+		.cat-products-grid .item-img .sold-out-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 14px;
+			margin-bottom: 0px;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			margin: 10px auto;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+		}
 	.cat-products-grid h2 {
 		font-size: 14px;
 		margin-bottom: 0px;
 		font-family: 'Raleway', sans-serif;
-		font-weight: 500;
+		font-weight: 700;
 		margin: 10px auto;
 		letter-spacing: 1px;
 	}
@@ -1548,8 +1507,6 @@ ul.header-social-networks li a {
 		font-size: 14px;
 		margin: 0;
 		margin: 0 0 10px 0;
-		font-family: 'Raleway', sans-serif;
-		font-weight: 700;
 	}
 
 /* === SEARCH === */
@@ -1836,7 +1793,12 @@ ul.header-social-networks li a {
 	margin-bottom: 30px;
 }
 	.contact-intro h2 {
-		font-size: 26px;
+		text-align: center;
+		font-size: 24px;
+		font-family: Raleway,sans-serif;
+		font-weight: 700;
+		letter-spacing: 3px;
+		margin: 0;
 	}
 	.contact-intro h3 {
 		text-transform: none;
@@ -1854,6 +1816,14 @@ ul.header-social-networks li a {
 	margin-bottom: 70px;
 	max-width: 800px;
 }
+	.contact-form h2 {
+		text-align: center;
+		font-size: 24px;
+		font-family: Raleway,sans-serif;
+		font-weight: 700;
+		letter-spacing: 3px;
+		margin: 0;
+	}
 	.contact-form form {
 		margin-top: 20px;
 	}
