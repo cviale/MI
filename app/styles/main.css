@@ -1284,6 +1284,12 @@ ul.header-social-networks li a {
 			width: 100%;
 			outline: none;
 		}
+		.image-portrait .slider-nav img {
+			padding: 0 0 46px 0;
+		}
+		.image-landscape .slider-nav img {
+			padding: 0 0 19px 0;
+		}
 	.product-img .inner {
 		outline: none;
 	}
