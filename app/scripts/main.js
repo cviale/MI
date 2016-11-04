@@ -38,7 +38,7 @@ $(document).ready(function() {
 	});
 
 	// Show/Hide Search Pop-in
-	$('.search').click(function() {
+	$('.main-menu ul li.search, .menu-mobile-main .search').click(function() {
 		$('.search-popin').fadeIn('slow');
 	});
 	$('.search-popin-close').click(function() {
@@ -235,4 +235,27 @@ $(document).ready(function() {
 	// 		top: 0
 	// 	})
 	// });
+
+
+
+
+	let navigations = document.querySelectorAll('.nav-tabs.-with-slider');
+
+	navigations.forEach(nav => {
+		let tabs = nav.querySelectorAll('.tab');
+		let numberOfTabs = tabs.length;
+		let sizeSliderShouldBe = 1 / numberOfTabs; // Gives us a number for flex property
+		let slider = nav.querySelector('.slider');
+
+		slider.style.flexGrow = sizeSliderShouldBe;
+
+		nav.addEventListener('mouseup', e => {
+		let tab = e.target.offsetLeft;
+		slider.style.left = `${tab}px`
+		});
+	});
+
+
+
+
 });
