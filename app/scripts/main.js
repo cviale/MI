@@ -9,7 +9,7 @@ $(document).ready(function() {
 	}
 
 	// Disable Touch iPhone
-	$('.menu-mobile').on('touchmove', function(e){
+	$('.menu-mobile, .logo-mobile').on('touchmove', function(e){
 		e.preventDefault();
 	});
 
@@ -38,7 +38,7 @@ $(document).ready(function() {
 	});
 
 	// Show/Hide Search Pop-in
-	$('.main-menu ul li.search, .menu-mobile-main .search').click(function() {
+	$('.main-menu ul li.search, .sticky-header ul.pull-left .search, .menu-mobile-main .search').click(function() {
 		$('.search-popin').fadeIn('slow');
 	});
 	$('.search-popin-close').click(function() {
@@ -184,32 +184,37 @@ $(document).ready(function() {
 	}
 
 	// Zoom image produit
-	$('.product-img .inner').click(function() {
-		if (!$('.global-product').hasClass('zoom-active')) {
-			$('.global-product').addClass('zoom-active');
-			$('.details-product').hide();
-			$('.product-img').removeClass('col-md-6').addClass('col-md-12');
-			$('.slider-for').slick('reinit');
-			$('.global-product').css('padding-right', '0');
-			$('.product-thumb').css({
-				opacity: '0', 
-				position: 'absolute', 
-	 			top: '0', 
-			});
-		} else {
-			$('.global-product').removeClass('zoom-active');
-			$('.details-product').show();
-			$('.product-img').removeClass('col-md-12').addClass('col-md-6');
-			$('.slider-for').slick('reinit');
-			$('.global-product').css('padding-right', '15px');
-			$('.product-thumb').css('opacity', '1');
-			$('.product-thumb').css({
-				opacity: '1', 
-				position: 'initial', 
-	 			top: '0', 
-			});
-		}
-	});
+	if (!isiPhone()) {
+		$('.product-img .inner').click(function() {
+			if (!$('.global-product').hasClass('zoom-active')) {
+				$('.global-product').addClass('zoom-active');
+				$('.details-product').hide();
+				$('.product-img').removeClass('col-md-6').addClass('col-md-12');
+				$('.slider-for').slick('reinit');
+				$('.global-product').css('padding-right', '0');
+				$('.product-thumb').css({
+					opacity: '0', 
+					position: 'absolute', 
+		 			top: '0', 
+				});
+			} else {
+				$('.global-product').removeClass('zoom-active');
+				$('.details-product').show();
+				$('.product-img').removeClass('col-md-12').addClass('col-md-6');
+				$('.slider-for').slick('reinit');
+				$('.global-product').css('padding-right', '15px');
+				$('.product-thumb').css('opacity', '1');
+				$('.product-thumb').css({
+					opacity: '1', 
+					position: 'initial', 
+		 			top: '0', 
+				});
+			}
+		});
+	} 
+
+
+	
 
 	// Zoom image produit
 	// var src = $('.thumb-show').find('img').attr('src');
@@ -236,26 +241,26 @@ $(document).ready(function() {
 	// 	})
 	// });
 
+	// Nav Line Horizontal - Search
+	var $nav = $('.nav-line');
+	$nav.find('button').eq(0).addClass('active');
+	$nav.append('<hr/>');
 
-
-
-	let navigations = document.querySelectorAll('.nav-tabs.-with-slider');
-
-	navigations.forEach(nav => {
-		let tabs = nav.querySelectorAll('.tab');
-		let numberOfTabs = tabs.length;
-		let sizeSliderShouldBe = 1 / numberOfTabs; // Gives us a number for flex property
-		let slider = nav.querySelector('.slider');
-
-		slider.style.flexGrow = sizeSliderShouldBe;
-
-		nav.addEventListener('mouseup', e => {
-		let tab = e.target.offsetLeft;
-		slider.style.left = `${tab}px`
+	function updateNavLine() {
+		var navItemWidth = $nav.find('button.active').outerWidth(),
+			navItemOffset = $nav.find('button.active').offset().left - $nav.offset().left;
+		$nav.find('hr').css({
+			'width': navItemWidth,
+			'left': navItemOffset
 		});
+	}
+
+	$(window).on('load resize', function() {
+		updateNavLine();
 	});
 
-
-
-
+	$nav.find('button').on('click', function() {		
+		$(this).addClass('active').siblings().removeClass('active');
+		updateNavLine();
+	});
 });

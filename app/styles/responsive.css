@@ -88,16 +88,17 @@
 	}
 	/* === STORIES === */
 	.breadcrumb {
-		margin: 15px auto;
+		border-radius: 0;
+		/* border-top: 1px solid #f3f3f3;
+		border-bottom: 1px solid #f3f3f3; */
+		padding: 10px 15px;
+		margin: 30px auto;
 	}
 	.wrapper-article h1 {
-		font-size: 24px;
+		font-size: 30px;
 	}
 	.main-article {
 		margin-bottom: 30px;
-	}
-	.main-article h1 {
-		margin-top: 10px;
 	}
 	.main-article-img img {
 		min-height: auto;
@@ -114,6 +115,7 @@
 		font-size: 22px;
 		line-height: 24px;
 		margin: 20px 0 20px;
+		font-weight: 400;
 	}
 	.main-article-content {
 		min-height: 210px;
@@ -177,10 +179,10 @@
 		-webkit-transition-delay: 0s;
 		transition-delay: 0s;
 	}
-	.single-story-carousel .slick-next {
+	.single-story-carousel .slick-next, .single-story-carousel .slick-next:hover {
 		right: 0;
 	}
-	.single-story-carousel .slick-prev {
+	.single-story-carousel .slick-prev, .single-story-carousel .slick-prev:hover {
 		left: 0;
 	}
 	.single-story-quote-text {
@@ -227,7 +229,7 @@
 	.shop .shop-article-inner figcaption {
 		width: 80%;
 		height: 120px;
-		background: #ffffff;
+		background: rgba(255, 255, 255, 0.8);
 	}
 	/* === SINGLE SHOP === */
 	.global-product {
@@ -244,6 +246,9 @@
 	}
 	.details-product h1 {
 		display: none;
+	}
+	.mobile-product h1 {
+		margin-top: 0;
 	}
 	.price {
 		margin-bottom: 20px;
@@ -306,6 +311,10 @@
 	.wrapper-content-inner {
 		padding: 30px;
 	}
+	/* === CONTACT === */
+	.contact-form {
+		margin-bottom: 30px;
+	}
 
 
 
@@ -329,6 +338,10 @@
 /* SMALL DEVICES < 767
 ======================================================================================= */
 @media only screen and (max-width : 767px) {
+	/* === GLOBAL SETTINGS === */
+	h2 {
+		font-size: 24px;
+	}
 	/* === HEADER === */
 	header.main-header {
 		display: none;
@@ -359,7 +372,11 @@
 		display: block;
 		margin: 20px auto 0;
 		position: relative;
-		z-index: 10;
+		z-index: 2;
+		width: 40%;
+	}
+	.logo-mobile svg {
+		width: 100%;
 	}
 	/* === HOME - MAIN IMAGE === */
 	.main-img {
@@ -391,6 +408,12 @@
 		height: auto;
 	}
 	.shop-article-inner {
+		margin-bottom: 0px;
+	}
+	.shop .shop-article-inner {
+		margin-bottom: 30px;
+	}
+	.boutique-inner .shop-article-inner {
 		margin-bottom: 30px;
 	}
 	.shop-article:last-of-type .shop-article-inner {
@@ -402,7 +425,7 @@
 		top: 50%;
 	}
 	.home .shop-article-inner figcaption .figcaption-inner {
-		background: #ffffff;
+		background: rgba(255, 255, 255, 0.9);
 		width: 80%;
 		margin: 0 auto;
 		margin-left: 10%;
@@ -410,11 +433,13 @@
 	}
 	.shop-article-inner figcaption h3 {
 		opacity: 1;
-		font-size: 18px;
+		font-size: 14px;
+		font-weight: 500;
 	}
 	.shop-article-inner figcaption p {
 		opacity: 1;
-		font-size: 16px;
+		font-size: 12px;
+		padding: 0;
 	}
 	.shop-text .inner {
 		padding-top: 20px;
@@ -427,12 +452,21 @@
 	.stories-about .text-center:first-of-type figure {
 		margin-bottom: 30px;
 	}
+	.stories-about figure figcaption {
+		height: 20%;
+	}
+	.stories-about figure h3 {
+		font-size: 14px;
+		font-weight: 500;
+	}
 	/* === REJOIGNEZ MI - HOME === */
 	.join-mi h2 {
 		padding: 0 15px;
+		font-size: 18px;
 	}
 	.join-mi h3 {
 		margin: 0 0 20px 0;
+		font-size: 14px;
 	}
 	.join-mi form {
 		padding: 0 15px;
@@ -454,19 +488,16 @@
 	.insta-home ul li:last-of-type {
 		margin-bottom: 0;
 	}
+	.insta-push h2 {
+		font-size: 18px;
+	}
 	/* === PUSH PRO - HOME === */
 	.pro-home {
 		display: none;
 	}
 	/* === MAIN IMAGE - ABOUT === */
-	.about .arrow-container {
-		display: block;
-	}
-	.widget-mi .col-sm-4 {
+	.widget-mi .about-logo {
 		display: none;
-	}
-	.about h1 {
-		font-size: 30px;
 	}
 	.widget-text h2, .join-community h2 {
 		font-size: 24px;
@@ -480,11 +511,59 @@
 	.join-community .inner h3 {
 		font-size: 22px;
 	}
+	/* === ABOUT === */
+	.about .arrow-container {
+		display: block;
+	}
+	.about .wrapper-content {
+		margin: -90px auto 30px;
+	}
+	.about h1 {
+		font-size: 22px;
+	}
+	.widget-text h2, .join-community h2 {
+		font-size: 18px;
+	}
+	.about p {
+		font-size: 14px;
+	}
+	.about .main-img {
+		margin: 0 auto;
+	}
 	/* === STORIES === */
+	.breadcrumb {
+		margin: 10px auto;
+	}
 	.main-article .main-article-content {
 		min-height: 280px;
 	}
+	.stories .main-article .main-article-content {
+		min-height: 240px;
+	}
+	.wrapper-article h1 {
+		font-size: 22px;
+	}
+	.wrapper-article h2 {
+		font-size: 18px;
+		line-height: 20px;
+		margin: 10px 0 0 0;
+	}
 	/* === STORY === */
+	.single-story .arrow-container {
+		display: block;
+	}
+	.single-story-top h1 {
+		font-size: 22px;
+	}
+	.single-story .single-story-content h2 {
+		font-size: 18px;
+	}
+	.single-story-quote-text {
+		height: auto;
+	}
+	.shop-article-inner figcaption {
+		bottom: 10px;
+	}
 	.slick-next, .slick-next:hover, .slick-next:active, .slick-next:focus {
 		width: 40px;
 		height: 40px;
@@ -506,6 +585,15 @@
 		display: block;
 	}
 	/* === SINGLE SHOP === */
+	.mobile-product h1 {
+		font-size: 22px;
+	}
+	.price {
+		font-size: 18px;
+	}
+	.product-img {
+		padding: 0;
+	}
 	.quantity-product, .add-to-cart {
 		margin: 0 10px 20px 0;
 	}
@@ -515,15 +603,32 @@
 	.shop-products-featured .img-desktop {
 		display: none;
 	}
+	.title-selection-carousel {
+		font-size: 18px;
+	}
+	/* === SINGLE CAT SHOP === */
+	.single-cat-shop .filters button {
+		position: relative;
+		padding-right: 15px;
+	}
+	.single-cat-shop .filters button:after {
+		content: '/';
+		position: absolute;
+		right: 0;
+	}
+	.single-cat-shop .filters button:last-of-type:after {
+		content: '';
+	}
+
 	/* === SEARCH === */
 	.search h1 {
-		font-size: 24px;
+		font-size: 22px;
 	}
 		.search .filters {
-			margin-top: 30px;
+			margin-top: 10px;
 		}
 		.search .search-results {
-			margin: 30px auto;
+			margin: 0px auto 30px;
 		}
 			.search .cat-products-grid article {
 				width: 91%;
@@ -575,6 +680,9 @@
 		margin-right: 0;
 		width: 100%;
 	}
+	.cart-payment-button .total-cart {
+		font-size: 20px;
+	}
 	/* === CATS SHOP === */
 	.cat-products-filters h1 {
 		margin-bottom: 10px;
@@ -600,6 +708,7 @@
 	}
 	.search-popin #search-query {
 		font-size: 3rem;
+		left: 15px;
 	}
 	.search-popin #search-query::-webkit-input-placeholder {
 		text-transform: uppercase;
@@ -625,15 +734,14 @@
 		opacity: 1;
 		font-weight: 300;
 	}
-	/* === BREADCRUMB === */
-	.breadcrumb {
-		border-radius: 0;
-		border-top: 1px solid #f3f3f3;
-		border-bottom: 1px solid #f3f3f3;
-		padding: 10px 15px;
+	/* === CONTACT === */
+	.contact-intro h2,
+	.contact-form h2 {
+		font-size: 20px;
 	}
-
-
+	.contact-intro h3 {
+		font-size: 18px;
+	}
 
 
 
