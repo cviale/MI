@@ -452,23 +452,42 @@ ul.header-social-networks li a {
 /* === INTRO - HOME === */
 .intro-home {
 	margin: 0 auto 70px;
+	text-align: left;
 }
-	.intro-home  h2 {
+	.intro-home strong {
+		font-size: 76px;
+		font-weight: 300;
+	}
+	.intro-home h2 {
 		margin: 0;
 		text-transform: none;
 		font-size: 20px;
-		line-height: 32px;
-	}	
+		line-height: 42px;
+		text-align: left;
+	}
+
+/* === SHOP BASELINE - HOME === */
+.boutique-baseline {
+	/* margin-bottom: 70px; */
+}
+	.boutique-baseline h2 {
+		text-align:  center;
+		font-size: 30px;
+		font-weight: 300;
+	}
 
 /* === SHOP - HOME === */
 .boutique {
-	margin-bottom: 70px;
-	background-color: #f3f3f3;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	margin-bottom: 40px;
+	/* background-color: #f3f3f3; */
+	/* padding-top: 70px; */
+	/* padding-bottom: 70px; */
+}
+.boutique-2 {
+	background-color: #ffffff;
 }
 	.boutique-inner {
-		max-width: 1200px;
+		max-width: 1170px;
 		margin: 0 auto;
 	}
 	.boutique .row:first-of-type {
@@ -494,21 +513,36 @@ ul.header-social-networks li a {
 			.shop-text .inner {
 				display: table-cell;
 				vertical-align: middle;
-				background-color: #ffffff;
 				padding-left: 30px;
 				padding-right: 30px;
+				text-align: left;
 			}
 				.shop-text h2 {
+					font-size: 52px;
+					line-height: 52px;
+					font-weight: 700;
+					font-size: 52px;
+					line-height: 50px;
+					font-weight: 100;
 					text-align: center;
-					font-size: 18px;
+					text-transform: none;
+					text-align: left;
+				}
+				.shop-text a {
 					font-weight: 500;
-					margin-bottom: 30px;
+					font-size: 15px;
 				}
 				.shop-text p {
-					font-size: 14px;
-					line-height: 28px;
-					text-align: center;
-					margin-bottom: 50px;
+					/* font-size: 34px;
+					line-height: 34px;
+					text-transform: uppercase;
+					font-weight: 100; */
+
+					font-size: 20px;
+					line-height: 20px;
+					font-weight: 300;
+
+
 				}
 				.shop-cta {
 					text-align: center;
@@ -524,6 +558,7 @@ ul.header-social-networks li a {
 					color: #ffffff;
 				}
 		.shop-article {
+			margin-bottom: 30px;
 		}
 			.shop-article-inner {
 				width: 100%;
@@ -545,17 +580,19 @@ ul.header-social-networks li a {
 					position: absolute;
 					left: 0;
 					top: 0;
-					width: 80%;
-					height: 40%;
+					width: 60%;
+					height: 14%;
 					background: rgba(255, 255, 255, 0.9);
-					margin: 30% 10%;
-					opacity: 0;
+					margin: 43% 20%;
+					opacity: 1;
+					-webkit-transition: all 0.3s ease-in;
 					transition: all 0.3s ease-in;
 				}
 				.shop-featured .shop-article-inner figcaption {
 					transform: translateY(-50%);
 					top: 50%;
 					margin: 0 10%;
+					width: 80%;
 				}
 					.figcaption-inner {
 						position: absolute;
@@ -578,10 +615,12 @@ ul.header-social-networks li a {
 					margin-bottom: 0px;
 					font-family: 'Raleway', sans-serif;
 					font-weight: 700;
+					opacity: 1;
 				}
 				.shop-article-inner p {
 					font-weight: 400;
 					font-size: 12px;
+					opacity: 1;
 				}
 				.shop-article-inner:hover figcaption {
 					opacity: 1;
@@ -597,6 +636,30 @@ ul.header-social-networks li a {
 .stories-about {
 	margin-bottom: 70px;
 }
+	.stories-about-title {
+		padding-bottom: 70px;
+		text-align: left;
+	}
+		.stories-about-title h2 {
+			margin: 0;
+			text-transform: none;
+			font-size: 20px;
+			line-height: 42px;
+			text-align: left;
+		}
+		.stories-about-title h2 strong {
+			margin: 0;
+			text-transform: none;
+			line-height: 42px;
+			text-align: left;
+			font-size: 76px;
+			font-weight: 300;
+		}
+		.stories-about-title p {
+			font-size: 20px;
+			line-height: 20px;
+			font-weight: 300;
+		}
 	.stories-about figure {
 		width: 100%;
 		color: #fff;
@@ -616,8 +679,8 @@ ul.header-social-networks li a {
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 80%;
-			height: 30%;
+			width: 40%;
+			height: 10%;
 			background: rgba(255, 255, 255, 0.9);
 			margin: 30% 10%;
 			opacity: 0;
@@ -626,7 +689,8 @@ ul.header-social-networks li a {
 		.stories-about figure figcaption {
 			transform: translateY(-50%);
 			top: 50%;
-			margin: 0 10%;
+			margin: 0 30%;
+			opacity: 1;
 		}
 			.stories-about figure .figcaption-inner {
 				position: absolute;
@@ -649,6 +713,7 @@ ul.header-social-networks li a {
 			margin-bottom: 0px;
 			font-family: 'Raleway', sans-serif;
 			font-weight: 700;
+			opacity: 1;
 		}
 		.stories-about figure p {
 			font-weight: 300;
